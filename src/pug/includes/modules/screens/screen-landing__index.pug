@@ -1,0 +1,23 @@
+section.screen__main(style="background-color: #f3f5f9")
+  .container
+    .row
+      .col-7
+        h1.header__h1--white
+          | Оформление допуска СРО за 1–3 дня!
+        p.subheader--white
+          | Работаем по всей России.
+        .list__wrapper
+          p.list__header
+            | Вы получаете:
+          ul.list--you-get
+            li.list__item Допуск СРО без комиссии, оплата производится напрямую в СРО.
+            li.list__item Все наши СРО успешно прошли проверку РосТехНадзора.
+            li.list__item Гарантированно проходите все необходимые проверки.
+      .col-5
+        .form-terms__wrapper
+          p.form-terms__header Узнать условия вступления в СРО с бесплатным представлением специалистов в НРС.
+          form.form-terms(action='#')
+            input#name(name='name', type='text', placeholder='Ваше имя')
+            input#phone(name='phone', type='text', placeholder='Номер телефона +7')
+            button.form-terms__submit Получить консультацию
+          p.form__terms--agreement Нажимая эту форму, вы даёте согласие на обработку персональных данных.

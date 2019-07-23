@@ -1,0 +1,90 @@
+// header style
+header {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  max-height: 95px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  height: 95px;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  z-index: 10;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__wrapper {
+      width: 100%;
+      max-width: 630px;
+    }
+  }
+}
+
+.nav {
+  &-item {
+    &.is-active {
+      .nav-link {
+        color: $accent;
+      }
+    }
+  }
+
+  &-link {
+    font-family: "ProximaRegular";
+    color: #6d7783;
+    font-size: rem(21);
+    font-weight: 400;
+  }
+}
+
+.navbar-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__img {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+  }
+
+  &__phone {
+    display: block;
+    width: 165px;
+    color: #0d1614;
+    margin-right: 25px;
+    font-family: "ProximaLt";
+    font-size: rem(20);
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+      color: #0d1614;
+    }
+  }
+
+  &__callback {
+    width: 100%;
+    max-width: 196px;
+    padding: 13px 20px 11px 20px;
+    border: none;
+    border-radius: 1px;
+    background-color: $accent;
+    color: #fff;
+    font-size: rem(16);
+    text-transform: uppercase;
+  }
+}

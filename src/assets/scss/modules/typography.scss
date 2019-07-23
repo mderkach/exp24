@@ -1,0 +1,46 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "ProximaRegular";
+  margin-bottom: 0;
+}
+
+.header {
+  &__h1 {
+    color: #20242e;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+
+  &__h2 {
+    color: #20242e;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  &__main {
+    margin-top: 175px;
+    margin-bottom: 35px;
+  }
+}
+
+
+.subheader {
+  &__main {
+    color: #6d7783;
+    font-size: rem(22);
+    font-weight: 400;
+    line-height: rem(35);
+    margin-bottom: 30px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

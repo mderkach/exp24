@@ -1,0 +1,31 @@
+.main-img {
+  position: absolute;
+  bottom: -170px;
+  right: -260px;
+}
+
+.btn {
+  &__consult {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 340px;
+    background-color: $accent;
+    font-family: "ProximaTh";
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 25px;
+    padding-right: 0;
+    border: none;
+
+    &-arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 55px;
+      height: 55px;
+      background-color: #00699e;
+    }
+  }
+}

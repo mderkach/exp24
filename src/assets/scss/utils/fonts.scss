@@ -1,0 +1,8 @@
+// Fonts here
+// see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
+@import "../utils/mixins";
+
+@include font-face("ProximaRegular", "/assets/fonts/ProximaNovaRegular/ProximaNovaRegular");
+@include font-face("ProximaLt", "/assets/fonts/ProximaNovaLt/ProximaNovaBold", bold);
+@include font-face("ProximaLight", "/assets/fonts/ProximaNovaLight/ProximaNovaLight");
+@include font-face("ProximaTh", "/assets/fonts/ProximaNovaTh/ProximaNovaTh");

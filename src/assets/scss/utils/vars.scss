@@ -1,0 +1,18 @@
+// Font
+$mainFont : "ProximaRegular",
+Helvetica,
+Arial,
+sans-serif;
+$accent: #00aaff;
+// Size
+$mainFontColor : #101010;
+$mainFontSize : 16px;
+$mainFontWeight : 400;
+$mainLineHeight : 1.4;
+
+$grid-gutter-width: 20px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1180px);
+
+$gutter: $grid-gutter-width;

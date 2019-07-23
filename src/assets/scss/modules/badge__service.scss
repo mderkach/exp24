@@ -1,0 +1,43 @@
+.badge {
+  &__service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
+    border-radius: 1px;
+    background-color: rgba($color: #e9ebef, $alpha: .5);
+    background-clip: content-box;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      color: #00aaff;
+
+      .badge__service-img--path {
+        fill: #00aaff;
+      }
+
+      .badge__service-descr {
+        color: #00aaff;
+      }
+    }
+
+    &-img {
+      width: 100%;
+      height: 60px;
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
+
+    &-descr {
+      font-family: "ProximaRegular";
+      color: #979fa8;
+      font-size: rem(20);
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}
