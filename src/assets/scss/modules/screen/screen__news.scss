@@ -1,0 +1,77 @@
+@import 'node_modules/bootstrap/scss/_transitions';
+
+.screen {
+  &__news {
+    padding-top: 130px;
+    padding-bottom: 105px;
+
+    h2 {
+      color: #20242e;
+      font-family: "ProximaRegular";
+      font-size: rem(40);
+      font-weight: 700;
+      line-height: rem(50);
+      margin-bottom: 45px;
+    }
+  }
+}
+
+.tabs {
+  &__news {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &-link {
+      display: block;
+      padding: 18px 60px 17px;
+      color: #00699e;
+      font-family: "ProximaTh";
+      font-size: rem(16);
+      text-transform: uppercase;
+      border-radius: 1px 0 0 1px;
+      background-color: #f3f5f9;
+
+      &:hover {
+        cursor: pointer;
+        color: #00699e;
+        text-decoration: none;
+      }
+
+      &.active {
+        color: #fff;
+        background-color: #00aaff;
+      }
+    }
+
+    &-content {
+      margin: 55px auto 0;
+    }
+
+    &-tab {
+      display: flex;
+      justify-content: space-between;
+
+      &:not(.active) {
+        display: none;
+      }
+
+      &--link {
+        width: 100%;
+      }
+
+      &--img {
+        width: 100%;
+      }
+    }
+
+    &-more {
+      margin: 45px auto 0;
+      max-width: 266px;
+
+      .tabs__news-link {
+        padding: 13px 30px 12px;
+      }
+    }
+  }
+}

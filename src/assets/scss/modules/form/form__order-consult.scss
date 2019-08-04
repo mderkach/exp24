@@ -1,0 +1,70 @@
+.form {
+  &__order {
+    &-consult {
+      position: relative;
+      bottom: -50px;
+      width: 100%;
+      padding: 45px 75px 70px;
+      background: #fff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 1px;
+      background-color: #ffffff;
+
+      h4 {
+        font-family: "ProximaLt";
+        font-size: rem(36);
+        font-weight: 700;
+        line-height: rem(50);
+        text-align: center;
+      }
+
+      p {
+        color: #6d7783;
+        font-family: "ProximaRegular";
+        font-size: rem(22);
+        font-weight: 400;
+        line-height: rem(35);
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      &--input {
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 15px 15px 10px;
+        border-radius: 1px;
+        border: 1px solid #dfe2e5;
+        background-color: rgba(233, 235, 239, 0.5);
+        color: #979fa8;
+        font-family: "ProximaRegular";
+        font-size: rem(20);
+        font-weight: 400;
+
+        &__wrapper {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          max-width: 380px;
+          margin: 0 auto;
+
+          .btn__order-consult {
+            @extend .btn__services;
+            width: 100%;
+            max-width: 100%;
+            color: #fff;
+            background-color: #00aaff;
+
+            &-arrow {
+              @extend .btn__services-arrow;
+              background-color: #00699e;
+            }
+
+            &-svg {
+              fill: #fff
+            }
+          }
+        }
+      }
+    }
+  }
+}

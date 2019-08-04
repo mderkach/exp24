@@ -1,0 +1,116 @@
+.slider {
+  &-reviews {
+    @extend .slider-main__actions;
+    padding-top: 0;
+    overflow: hidden;
+
+    &-wrapper {
+      margin-bottom: 65px;
+    }
+
+    &--slide {
+      position: relative;
+      padding: 30px 20px;
+      border-radius: 1px;
+      background-color: #f1f4f8;
+
+      &:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+
+        .slider-reviews--slide--link {
+          background-color: #e9ebef;
+        }
+      }
+
+      &--info {
+        color: rgba($color: #20242e, $alpha: 0.7);
+        font-family: 'ProximaRegular';
+        font-size: rem(16);
+        font-weight: 400;
+        line-height: rem(25);
+      }
+
+      &--footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 35px;
+      }
+
+      &--author {
+        color: #20242e;
+        font-family: "ProximaLt";
+        font-size: rem(16);
+        font-weight: 600;
+
+        &-job {
+          color: rgba($color: #20242e, $alpha: 0.5);
+          font-family: "ProximaLt";
+          font-size: rem(16);
+          font-weight: 600;
+        }
+
+        &-wrapper {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      &--link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 1px;
+        background-color: #ffffff;
+      }
+
+      &--arrow {
+        fill: #00699e;
+      }
+
+      &--next,
+      &--prev {
+        position: absolute;
+        bottom: 35px;
+        z-index: 2;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &--next {
+        transform: rotate(180deg);
+        right: 0;
+      }
+
+      &--prev {
+        left: 0;
+      }
+    }
+
+    &--pagination {
+      display: flex;
+      justify-content: center;
+
+      &--bullet {
+        width: 15px;
+        height: 15px;
+        margin-right: 15px;
+        border-radius: 50%;
+        background-color: #bec4ca;
+
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+
+        &--active {
+          background-color: #00aaff;
+        }
+      }
+    }
+  }
+}

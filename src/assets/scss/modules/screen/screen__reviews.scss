@@ -1,0 +1,16 @@
+.screen {
+  &__reviews {
+    padding-top: 220px;
+    padding-bottom: 160px;
+    background-position: 50% 0;
+
+    h2 {
+      color: #20242e;
+      font-family: "ProximaLt";
+      font-size: rem(40);
+      font-weight: 700;
+      line-height: rem(50);
+      margin-bottom: 35px;
+    }
+  }
+}

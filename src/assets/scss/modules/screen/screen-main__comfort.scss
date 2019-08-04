@@ -1,0 +1,15 @@
+.screen {
+  &-main {
+    &__comfort {
+      margin-top: 200px;
+      padding-bottom: 120px;
+      background-color: #f3f5f9;
+    }
+  }
+}
+
+.relative-cont {
+  position: relative;
+  top: -200px;
+  margin-bottom: -200px;
+}

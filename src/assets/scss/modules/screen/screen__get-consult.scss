@@ -1,0 +1,30 @@
+.screen {
+  &__get {
+    &-consult {
+      padding: 75px 0;
+      background-image: linear-gradient(270deg, #00aaff 0%, #00699e 100%);
+
+      .btn {
+        &__get {
+          &-consult {
+            @extend .btn__services;
+
+            &-arrow {
+              @extend .btn__services-arrow;
+            }
+
+            &-svg {
+              @extend .btn__services-svg;
+            }
+
+            &-wrapper {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

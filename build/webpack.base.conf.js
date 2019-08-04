@@ -33,18 +33,6 @@ module.exports = {
     path: PATHS.dist,
     publicPath: '/',
   },
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          name: 'vendors',
-          test: /node_modules/,
-          chunks: 'all',
-          enforce: true,
-        },
-      },
-    },
-  },
   module: {
     rules: [
       {
@@ -103,6 +91,15 @@ module.exports = {
             options: { sourceMap: true, config: { path: `${PATHS.build}/postcss.config.js` } },
           },
         ],
+      },
+      {
+        test: /bootstrap\.native/,
+        use: {
+          loader: 'bootstrap.native-loader',
+          options: {
+            only: ['tab'],
+          },
+        },
       },
     ],
   },

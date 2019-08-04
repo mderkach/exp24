@@ -1,5 +1,5 @@
-@import "utils/libs";
 @import "utils/vars";
+@import "utils/libs";
 @import "utils/mixins";
 @import "utils/fonts";
 
@@ -8,6 +8,7 @@ html {
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -57,7 +58,17 @@ li {
 // Modules
 @import "modules/typography";
 @import "modules/header";
-@import "modules/screen-main__index";
-@import "modules/cards__advantage";
+@import "modules/screen/screen-main__index";
+@import "modules/card/cards__advantage";
 @import "modules/badge__service";
-@import "modules/screen-main__company";
+@import "modules/screen/screen-main__company";
+@import "modules/screen/screen-main__comfort";
+@import "modules/slider/slider-main__actions";
+@import "modules/screen/screen-main__order-consult";
+@import "modules/list/horizontal-list";
+@import "modules/form/form__order-consult";
+@import "modules/screen/screen__reviews";
+@import "modules/slider/slider__reviews";
+@import "modules/screen/screen__news";
+@import "modules/screen/screen__get-consult";
+@import "modules/footer"

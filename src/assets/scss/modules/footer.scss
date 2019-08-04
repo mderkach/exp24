@@ -1,1 +1,139 @@
-// footer style
+.footer {
+  padding: 115px 0 35px;
+  background-color: #20242e;
+
+  .row {
+    justify-content: flex-end;
+
+    &:nth-child(1) {
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    &-contacts {
+      margin-top: 35px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  &__links {
+    &-block {
+      display: flex;
+      flex-direction: column;
+      width: 130px;
+      margin: 0 10px;
+
+      &--outer {
+        display: flex;
+        flex-direction: row;
+      }
+
+      &-header {
+        color: rgba($color: #fff, $alpha: 0.25);
+        font-family: 'ProximaRegular';
+        font-size: rem(14);
+        font-weight: 700;
+        letter-spacing: 0.44px;
+        line-height: rem(25);
+        text-transform: uppercase;
+        margin-bottom: 13px;
+      }
+
+      &--wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &--link {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        color: #ffffff;
+        font-family: "ProximaRegular";
+        font-size: rem(14);
+        font-weight: 400;
+        line-height: rem(20);
+        margin-bottom: 7px;
+
+        &-img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          max-width: 15px;
+          max-height: 10px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 1px;
+    background-color: #00aaff;
+    color: #ffffff;
+    font-family: "ProximaTh";
+    font-size: rem(16);
+    text-transform: uppercase;
+
+    &:nth-last-child(1) {
+      background-color: #00699e;
+    }
+
+    &--wrapper {
+      max-width: 180px;
+    }
+  }
+
+  &__copyright {
+    margin-top: 30px;
+    color: rgba($color: #fff, $alpha: 0.34);
+    font-family: "ProximaRegular";
+    font-size: rem(16.4);
+    font-weight: 400;
+    line-height: rem(25);
+  }
+}
+
+.btn {
+  &__footer {
+    &-contacts {
+      display: block;
+      width: 35px;
+      height: 35px;
+      margin-right: 15px;
+      padding: 5px 8px;
+      border-radius: 1px;
+      background-color: rgba($color: #fff, $alpha: 0.1);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+.subfooter {
+  padding: 18px 0;
+  background-color: #15171e;
+
+  .row {
+    justify-content: flex-end;
+  }
+
+  &-descr {
+    color: rgba($color: #fff, $alpha: 0.25);
+    font-family: "ProximaRegular";
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: rem(25);
+  }
+}
