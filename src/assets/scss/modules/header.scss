@@ -8,7 +8,7 @@
   background-color: #fff;
   z-index: 10;
 
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(xl) {
     height: auto;
   }
 
@@ -18,7 +18,7 @@
     padding: 10px 15px;
     background-color: #00699e;
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       display: block;
 
       .navbar-contacts {
@@ -46,6 +46,11 @@
           text-transform: uppercase;
         }
       }
+    }
+
+    @include media-breakpoint-down(xs) {
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }
@@ -78,6 +83,11 @@
 
   @include media-breakpoint-down(lg) {
     padding: 25px 15px 20px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -142,7 +152,7 @@
 .hamburger {
   display: none;
 
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(xl) {
     display: block;
   }
 }

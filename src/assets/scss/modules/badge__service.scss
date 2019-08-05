@@ -10,6 +10,19 @@
     background-color: rgba($color: #e9ebef, $alpha: .5);
     background-clip: content-box;
 
+    @include media-breakpoint-down(lg) {
+      min-width: 180px;
+      margin: 0 10px;
+    }
+
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 55px;
+      flex-wrap: nowrap;
+      overflow: auto;
+    }
+
     &:hover {
       cursor: pointer;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);

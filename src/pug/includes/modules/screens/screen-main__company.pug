@@ -5,7 +5,7 @@ section.screen-main__company
     .row
       h2.header__h2.col-12.text-center Одна компания
       p.subheader__main.col-12.text-center для решения всех юридических вопросов
-    .row(style="display: flex; justify-content: space-between; margin-top: 55px;")
+    .row.badge__service-row
       each service, index in services
         .badge__service
           if index == 0
@@ -41,7 +41,7 @@ section.screen-main__company
           p.badge__service-descr
             | #{service.descr}
     .row
-      .col-7
+      .col-lg-7.col-12
         h2.header__h2
           | Курсы повышения квалификации и
           | переподготовки
@@ -51,5 +51,5 @@ section.screen-main__company
               svg.svg-inline--fa.fa-check.fa-w-16(data-icon='check', data-prefix='fas', role='img', aria-hidden='true', width='24', height='18', focusable='false', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 512 512')
                 path(fill='#34c899', d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z')
               | #{item}
-      .col-5(style="display: flex; justify-content: flex-end; align-items: flex-end;")
+      .col-lg-5.col-12(style="display: flex; justify-content: flex-end; align-items: flex-end;")
         img(src="../../../../assets/img/svg/notebook.svg", alt="")

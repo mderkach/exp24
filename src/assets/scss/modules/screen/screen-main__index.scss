@@ -50,28 +50,28 @@
 .main-img {
   position: absolute;
   z-index: 0;
+  top: -65px;
+  right: -260px;
 
-  @include media-breakpoint-up(xl) {
-    bottom: -155px;
-    right: -260px;
+  @media screen and(max-width: 1200px) {
+    right: -225px;
+    width: 80%;
   }
 
-  @include media-breakpoint-between(lg, xl) {
-    bottom: -95px;
-    right: -190px;
-    max-width: 865px;
+  @media screen and (min-width: 992px) and (max-width: 1024) {
+    right: -210px;
+    width: 90%;
   }
 
-  @include media-breakpoint-between(md, lg) {
-    width: 100%;
-    top: -60px;
-  }
-
-  @include media-breakpoint-down(sm) {
+  @media screen and (max-width: 991px) and (min-width: 576px) {
     position: relative;
-    width: 50%;
-    right: -61%;
-    top: -145px;
+  }
+
+  @media screen and (max-width: 575px) {
+    position: relative;
+    top: -115px;
+    right: 0;
+    width: 100%;
   }
 }
 
