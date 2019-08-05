@@ -1,10 +1,15 @@
-header
+header.header
 	.container-fluid
 		.row
-			nav.navbar.navbar-expand-lg
+			.header__upper
+				.navbar-contacts
+						img.navbar-contacts__img(src='./assets/img/svg/phone.svg', alt='')
+						a.navbar-contacts__phone(href='tel:88007773399') 8 800 777 33 99
+						button.navbar-contacts__callback Заказать звонок
+			nav.navbar.navbar-expand-xl
 				a.navbar-brand(href='/')
 					img(src='./assets/img/svg/logo.svg', alt='')
-				.collapse.navbar-collapse.navbar-nav__wrapper
+				.collapse.navbar-collapse.navbar-nav__wrapper#navbar
 					ul.navbar-nav
 						li.nav-item.is-active
 							a.nav-link(href='#') Главная
@@ -18,7 +23,12 @@ header
 							a.nav-link(href='#') Новости
 						li.nav-item
 							a.nav-link(href='#') Контакты
-				.navbar-contacts
-					img.navbar-contacts__img(src='./assets/img/svg/phone.svg', alt='')
-					a.navbar-contacts__phone(href='tel:88007773399') 8 800 777 33 99
-					button.navbar-contacts__callback Заказать звонок
+					.navbar-contacts
+						img.navbar-contacts__img(src='./assets/img/svg/phone.svg', alt='')
+						a.navbar-contacts__phone(href='tel:88007773399') 8 800 777 33 99
+						button.navbar-contacts__callback Заказать звонок
+				button.hamburger.hamburger--collapse(type='button')
+					span.hamburger-box
+						span.hamburger-inner
+		.row
+			include ./menu/menu-mobile.pug

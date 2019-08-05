@@ -3,6 +3,7 @@
 @import "utils/mixins";
 @import "utils/fonts";
 
+
 html {
   line-height: $mainLineHeight;
   font-size: $mainFontSize;
@@ -28,6 +29,13 @@ body {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+
+button {
+  &:focus {
+    outline: none;
+  }
 }
 
 h1,
@@ -71,4 +79,5 @@ li {
 @import "modules/slider/slider__reviews";
 @import "modules/screen/screen__news";
 @import "modules/screen/screen__get-consult";
-@import "modules/footer"
+@import "modules/footer";
+@import "modules/menu/menu-mobile";

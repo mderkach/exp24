@@ -1,7 +1,78 @@
+.screen {
+  &__main {
+    position: relative;
+    margin-top: 95px;
+    background: #f3f5f9;
+    height: calc(100vh - 95px);
+
+    @media screen and (max-width: 991px) and (max-height: 865px) {
+      height: 100%;
+    }
+
+    &-outer {
+      @include make-col(8);
+      @include make-col-ready();
+      z-index: 1;
+
+      @include media-breakpoint-down(lg) {
+        @include make-col(12);
+      }
+    }
+  }
+}
+
+.header {
+  &__main {
+    margin-top: 175px;
+    margin-bottom: 35px;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 75px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.subheader {
+  &__main {
+    color: #6d7783;
+    font-size: rem(22);
+    font-weight: 400;
+    line-height: rem(35);
+    margin-bottom: 30px;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
 .main-img {
   position: absolute;
-  bottom: -170px;
-  right: -260px;
+  z-index: 0;
+
+  @include media-breakpoint-up(xl) {
+    bottom: -155px;
+    right: -260px;
+  }
+
+  @include media-breakpoint-between(lg, xl) {
+    bottom: -95px;
+    right: -190px;
+    max-width: 865px;
+  }
+
+  @include media-breakpoint-between(md, lg) {
+    width: 100%;
+    top: -60px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    position: relative;
+    width: 50%;
+    right: -61%;
+    top: -145px;
+  }
 }
 
 .btn {

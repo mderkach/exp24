@@ -12,7 +12,13 @@ $mainLineHeight : 1.4;
 
 $grid-gutter-width: 20px;
 $grid-columns: 12;
-$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
-$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1180px);
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1280px, xxl: 1440px, );
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1180px, );
 
 $gutter: $grid-gutter-width;
+
+$hamburger-padding-x : 0;
+$hamburger-padding-y : 0;
+$hamburger-layer-width : 25px;
+$hamburger-layer-height : 2px;
+$hamburger-layer-spacing : 5px;

@@ -57,22 +57,44 @@
         &--next,
         &--prev {
           position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
           z-index: 2;
 
           &:hover {
             cursor: pointer;
           }
+
+          @include media-breakpoint-up(xl) {
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          @include media-breakpoint-down(xl) {
+            top: unset;
+            transform: translateY(0);
+            bottom: 30px;
+          }
         }
 
         &--next {
-          transform: rotate(180deg);
-          right: -50px;
+          @include media-breakpoint-up(xl) {
+            transform: rotate(180deg);
+            right: -50px;
+          }
+
+          @include media-breakpoint-down(xl) {
+            transform: rotate(180deg);
+            right: 0;
+          }
         }
 
         &--prev {
-          left: -50px;
+          @include media-breakpoint-up(xl) {
+            left: -50px;
+          }
+
+          @include media-breakpoint-down(xl) {
+            left: 0;
+          }
         }
       }
 

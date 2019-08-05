@@ -12,32 +12,20 @@ p {
 .header {
   &__h1 {
     color: #20242e;
-    font-size: 60px;
+    font-size: rem(60);
     font-weight: 700;
     line-height: 60px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: rem(40)
+    }
   }
 
   &__h2 {
     color: #20242e;
-    font-size: 40px;
+    font-size: rem(40);
     font-weight: 700;
     line-height: 50px;
-  }
-
-  &__main {
-    margin-top: 175px;
-    margin-bottom: 35px;
-  }
-}
-
-
-.subheader {
-  &__main {
-    color: #6d7783;
-    font-size: rem(22);
-    font-weight: 400;
-    line-height: rem(35);
-    margin-bottom: 30px;
   }
 }
 
