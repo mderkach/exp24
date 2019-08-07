@@ -21,6 +21,17 @@
       margin-top: 55px;
       flex-wrap: nowrap;
       overflow: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
 
     &:hover {

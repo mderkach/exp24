@@ -6,6 +6,10 @@
     margin-top: 20px;
     justify-content: space-between;
 
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+
     &__outer {
       display: flex;
       flex-direction: column;
@@ -24,11 +28,17 @@
     }
 
     &--item {
+      display: flex;
+      align-items: center;
       color: #ffffff;
       font-family: "ProximaLt";
       font-size: rem(18);
       font-weight: 600;
       line-height: rem(30);
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 15px;
+      }
 
       .svg-inline--fa {
         margin-right: 25px;

@@ -10,12 +10,20 @@
       border-radius: 1px;
       background-color: #ffffff;
 
+      @include media-breakpoint-down(xs) {
+        padding: 35px 15px 40px;
+      }
+
       h4 {
         font-family: "ProximaLt";
         font-size: rem(36);
         font-weight: 700;
         line-height: rem(50);
         text-align: center;
+
+        @include media-breakpoint-down(xs) {
+          margin-bottom: 25px;
+        }
       }
 
       p {
@@ -26,6 +34,10 @@
         line-height: rem(35);
         margin-bottom: 40px;
         text-align: center;
+
+        @include media-breakpoint-down(xs) {
+          margin-bottom: 15px;
+        }
       }
 
       &--input {
@@ -46,6 +58,10 @@
           width: 100%;
           max-width: 380px;
           margin: 0 auto;
+
+          @include media-breakpoint-down(xs) {
+            max-width: 100%;
+          }
 
           .btn__order-consult {
             @extend .btn__services;

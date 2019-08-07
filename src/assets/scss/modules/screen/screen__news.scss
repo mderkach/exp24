@@ -32,6 +32,11 @@
       border-radius: 1px 0 0 1px;
       background-color: #f3f5f9;
 
+      @include media-breakpoint-down(md) {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+
       &:hover {
         cursor: pointer;
         color: #00699e;

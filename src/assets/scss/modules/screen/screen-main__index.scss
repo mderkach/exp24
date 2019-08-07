@@ -65,12 +65,14 @@
 
   @media screen and (max-width: 991px) and (min-width: 576px) {
     position: relative;
+    top: -115px;
+    right: -300px;
   }
 
   @media screen and (max-width: 575px) {
     position: relative;
-    top: -115px;
-    right: 0;
+    top: -160px;
+    right: -90px;
     width: 100%;
   }
 }

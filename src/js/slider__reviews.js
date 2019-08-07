@@ -15,4 +15,9 @@ var reviews = new Swiper('.slider-reviews', {
     bulletClass: 'slider-reviews--pagination--bullet',
     bulletActiveClass: 'slider-reviews--pagination--bullet--active',
   },
+  breakpoints: {
+    991: {
+      slidesPerView: 1,
+    },
+  },
 })

@@ -14,6 +14,14 @@
       border-radius: 1px;
       background-color: #f1f4f8;
 
+      @include media-breakpoint-down(md) {
+        background: #fff;
+
+        .slider-reviews--slide--link {
+          background-color: #e9ebef;
+        }
+      }
+
       &:hover {
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         background-color: #ffffff;
@@ -76,6 +84,10 @@
         position: absolute;
         bottom: 35px;
         z-index: 2;
+
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
 
         &:hover {
           cursor: pointer;
