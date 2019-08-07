@@ -24,6 +24,12 @@
         font-weight: 700;
         line-height: rem(50);
         margin-bottom: 5px;
+
+        @include media-breakpoint-down(lg) {
+          font-size: rem(30);
+          line-height: rem(35);
+          margin-bottom: 20px;
+        }
       }
     }
 

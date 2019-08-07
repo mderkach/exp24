@@ -22,20 +22,30 @@
     display: flex;
     justify-content: center;
 
-    &-link {
+    &-item {
       display: block;
-      padding: 18px 60px 17px;
+      width: 100%;
+      max-width: 200px;
+      height: 100%;
+      height: 55px;
+
+      @include media-breakpoint-down(lg) {
+        max-width: 165px;
+      }
+    }
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
       color: #00699e;
       font-family: "ProximaTh";
       font-size: rem(16);
       text-transform: uppercase;
       border-radius: 1px 0 0 1px;
       background-color: #f3f5f9;
-
-      @include media-breakpoint-down(md) {
-        padding-left: 35px;
-        padding-right: 35px;
-      }
 
       &:hover {
         cursor: pointer;
@@ -57,16 +67,57 @@
       display: flex;
       justify-content: space-between;
 
+      @include media-breakpoint-down(lg) {
+        justify-content: center;
+      }
+
       &:not(.active) {
         display: none;
       }
 
       &--link {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         width: 100%;
+        max-width: 280px;
+        height: 180px;
+
+        @include media-breakpoint-down(lg) {
+          max-width: 355px;
+          height: 190px;
+          margin: 10px 5px 0;
+        }
+
+        @include media-breakpoint-down(md) {
+          padding: 0;
+          margin: 0 auto 10px;
+        }
+
+        p {
+          display: none;
+          margin: 25px 35px;
+          color: #ffffff;
+          font-family: "ProximaRegular";
+          font-size: rem(25);
+          font-weight: 700;
+          z-index: 1;
+
+          @include media-breakpoint-down(md) {
+            display: block;
+          }
+        }
       }
 
       &--img {
+        position: absolute;
         width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
       }
     }
 

@@ -7,6 +7,10 @@
 
     &:nth-child(1) {
       justify-content: space-between;
+
+      @include media-breakpoint-down(md) {
+        padding: 0 10px;
+      }
     }
   }
 
@@ -26,9 +30,20 @@
       width: 130px;
       margin: 0 10px;
 
+      @include media-breakpoint-down(md) {
+        width: 150px;
+        margin: 35px 25px 0 0;
+      }
+
       &--outer {
         display: flex;
         flex-direction: row;
+
+        @include media-breakpoint-down(md) {
+          flex-wrap: wrap;
+          margin-bottom: 35px;
+          padding: 0;
+        }
       }
 
       &-header {
@@ -89,6 +104,10 @@
 
     &--wrapper {
       max-width: 180px;
+
+      @include media-breakpoint-down(md) {
+        max-width: 100%;
+      }
     }
   }
 
@@ -99,6 +118,10 @@
     font-size: rem(16.4);
     font-weight: 400;
     line-height: rem(25);
+
+    @include media-breakpoint-down(md) {
+      padding: 0 10px;
+    }
   }
 }
 
@@ -135,5 +158,9 @@
     font-size: rem(14);
     font-weight: 400;
     line-height: rem(25);
+
+    @include media-breakpoint-down(md) {
+      padding: 0 10px;
+    }
   }
 }

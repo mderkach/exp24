@@ -17,6 +17,8 @@
 
           @include media-breakpoint-down(md) {
             text-align: left;
+            font-size: rem(40);
+            line-height: rem(45);
           }
         }
       }

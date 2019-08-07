@@ -27,6 +27,12 @@ p {
     font-size: rem(40);
     font-weight: 700;
     line-height: 50px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: rem(30);
+      font-weight: 700;
+      line-height: rem(35);
+    }
   }
 }
 
