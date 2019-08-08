@@ -1,0 +1,47 @@
+.breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #00aaff;
+  font-family: "ProximaLt";
+  font-size: rem(16);
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    color: #00aaff;
+    text-decoration: none;
+  }
+
+  &.is-active {
+    color: #20242e;
+
+    &:hover {
+      color: #20242e;
+    }
+  }
+
+  &__outer {
+    padding-top: 140px;
+
+    @include media-breakpoint-down(xl) {
+      padding-top: 200px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 45px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dfe2e5;
+
+  }
+
+  &-next {
+    margin: 0 10px;
+  }
+}
