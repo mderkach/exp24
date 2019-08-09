@@ -39,6 +39,10 @@
     padding-bottom: 25px;
     border-bottom: 1px solid #dfe2e5;
 
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
   }
 
   &-next {
