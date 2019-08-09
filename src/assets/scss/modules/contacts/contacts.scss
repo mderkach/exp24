@@ -1,0 +1,80 @@
+.map {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+
+
+
+  &__wrapper {
+    @include make-col(7);
+    @include make-col-ready();
+
+    @include media-breakpoint-down(lg) {
+      @include make-col(12);
+      order: 2;
+      height: 630px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      height: 455px;
+    }
+  }
+}
+
+.contacts {
+  margin-bottom: 70px;
+
+  &__list {
+    @include make-col(5);
+    @include make-col-ready();
+
+    width: 100%;
+    border-radius: 1px;
+
+    @include media-breakpoint-down(lg) {
+      @include make-col(12);
+      order: 1;
+      margin-bottom: 25px;
+    }
+
+    &--item {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 30px 35px;
+      background: #fff;
+      border-bottom: 1px solid #dfe2e5;
+
+      .header__h2 {
+        color: #fff;
+      }
+
+      &:nth-child(1) {
+        background: $accent;
+        background-color: $accent;
+      }
+
+      &:nth-last-child(1) {
+        border-bottom: none;
+      }
+
+      &-svg {
+        position: relative;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      &-descr {
+        color: #0d1116;
+        font-family: "ProximaRegular";
+        font-size: rem(21);
+        font-weight: 400;
+        line-height: rem(30);
+      }
+    }
+  }
+}
