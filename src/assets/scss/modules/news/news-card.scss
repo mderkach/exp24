@@ -1,0 +1,120 @@
+.news {
+  &__heading {
+    @include media-breakpoint-down(xs) {
+      padding: 0 20px;
+    }
+  }
+
+  &__outer {
+    @include make-row();
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  &__card {
+    @include make-col(12);
+    display: flex;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column
+    }
+
+    @include media-breakpoint-down(xs) {
+      @include make-col-ready();
+    }
+
+    &-img {
+      display: block;
+      width: 100%;
+
+      &__wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+
+        @include media-breakpoint-down(md) {
+          max-width: 100%;
+        }
+      }
+
+      &--info {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 100%;
+        max-width: 50px;
+
+        &-date {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding: 5px 0 0;
+          background-color: #fff;
+          color: #20242e;
+          font-family: "ProximaRegular";
+          font-size: rem(25);
+          font-weight: 700;
+        }
+
+        &-month {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding: 5px 0;
+          background-color: #ef5350;
+          color: #fff;
+          font-family: "ProximaLt";
+          font-size: rem(11);
+          font-weight: 600;
+        }
+      }
+    }
+
+    &-body {
+      margin-left: 25px;
+      width: 100%;
+      max-width: 755px;
+
+      @include media-breakpoint-down(md) {
+        margin-left: 0;
+        max-width: 100%;
+      }
+
+      &>.article__info {
+        @include media-breakpoint-down(xs) {
+          display: none;
+        }
+      }
+    }
+
+    &-header {
+      color: #20242e;
+      font-family: "ProximaRegular";
+      font-size: rem(30);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+
+    &-excerpt {
+      color: #20242e;
+      font-family: "ProximaRegular";
+      font-size: rem(20);
+      font-weight: 400;
+      line-height: rem(30);
+      margin-bottom: 20px;
+
+      @include media-breakpoint-down(xs) {
+        display: none;
+      }
+    }
+  }
+}
