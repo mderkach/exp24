@@ -1,0 +1,82 @@
+.review {
+  &__outer {
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 80px 100px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+    background-color: #ffffff;
+
+    @include media-breakpoint-down(md) {
+      padding: 50px 15px
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  &__head {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__body {
+    display: flex;
+    margin-top: 100px;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+
+    .cards {
+      margin-right: 0;
+
+      @include media-breakpoint-down(lg) {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__header {
+    margin-bottom: 50px;
+  }
+
+  &__paragraph {
+    text-indent: 20px;
+    color: #494c56;
+    font-family: "ProximaRegular";
+    font-size: rem(20);
+    font-weight: 400;
+    line-height: rem(35);
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 580px;
+    margin-right: 10px;
+
+    &-footer {
+      margin-top: 20px;
+    }
+  }
+
+  &__author {
+    color: #0d1116;
+    font-family: "ProximaRegular";
+    font-size: rem(20);
+    font-weight: 700;
+    line-height: rem(35);
+
+    &-name {
+      @extend .review__author;
+      font-weight: 400;
+    }
+  }
+}
