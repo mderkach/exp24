@@ -1,0 +1,70 @@
+.document {
+  &__header {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: rem(40);
+    font-weight: 700;
+    line-height: rem(50);
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 50px;
+      font-size: rem(35)
+    }
+  }
+
+  &__subheader {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: rem(25);
+    font-weight: 700;
+    line-height: rem(35);
+  }
+
+  &__paragraph {
+    font-family: "ProximaRegular";
+    font-size: rem(20);
+    font-weight: 400;
+    line-height: rem(35);
+  }
+
+  &__footer {
+    padding: 50px 0;
+    display: flex;
+    border-radius: 1px;
+    border-top: 2px solid #dfe2e5;
+
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 180px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #00aaff;
+    color: #ffffff;
+    font-family: "ProximaLt";
+    font-size: rem(16);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 20px;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 155px;
+      margin-right: 15px;
+
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
+    }
+
+    &-svg {
+      margin-right: 5px;
+    }
+  }
+}

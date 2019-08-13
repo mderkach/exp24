@@ -1,8 +1,9 @@
 .article {
+  width: 100%;
   background: #fff;
+  margin-bottom: 100px;
   border-radius: 1px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 100px;
 
   @include media-breakpoint-down(xs) {
     margin-left: 10px;

@@ -1,7 +1,8 @@
 section.cards__section
   .container
     .row
-      h2.header__h2 Документы
+      block documentHeader
+        h2.header__h2 Документы
     .cards__wrapper
       each val in [1,2,3]
         .cards
