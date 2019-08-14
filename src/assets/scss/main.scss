@@ -92,3 +92,12 @@ li {
 @import "modules/review/review-body";
 @import "modules/screen/screen__services";
 @import "modules/cards/cards-service";
+@import "modules/screen/screen-landing__index";
+@import "modules/screen/screen-landing__advantages";
+@import "modules/screen/screen-landing__servicepacks";
+@import "modules/screen/screen-landing__timeline";
+
+//
+.--white {
+  color: #fff
+}

@@ -1,5 +1,46 @@
-.card {
-  &__advantage {
-    position: relative;
+.cards {
+  &__advantages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 20px;
+    padding: 50px 25px 70px;
+    border-radius: 1px;
+    background-color: rgba($color: #e9ebef, $alpha: .5);
+
+    &-outer {
+      @include make-row();
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    &--img {
+      width: 75px;
+      height: 75px;
+      margin: 0 auto;
+    }
+
+    &--header {
+      margin-top: 40px;
+      margin-bottom: 15px;
+      color: #00699e;
+      font-family: "ProximaRegular";
+      font-size: rem(30);
+      font-weight: 700;
+      text-align: center;
+    }
+
+    &--descr {
+      color: #6d7783;
+      font-family: "ProximaRegular";
+      font-size: rem(16);
+      font-weight: 400;
+      line-height: rem(22);
+      text-align: center;
+      margin-bottom: 0;
+    }
   }
 }

@@ -1,23 +1,38 @@
-section.screen__main(style="background-color: #f3f5f9")
+section.screen__main.screen__landing(style="background-image: url('/assets/img/bg__landing.jpg')")
   .container
     .row
       .col-7
-        h1.header__h1--white
+        h1.header__h1.--white
           | Оформление допуска СРО за 1–3 дня!
-        p.subheader--white
+        p.subheader.--white
           | Работаем по всей России.
         .list__wrapper
-          p.list__header
+          p.list__header.--white
             | Вы получаете:
           ul.list--you-get
-            li.list__item Допуск СРО без комиссии, оплата производится напрямую в СРО.
-            li.list__item Все наши СРО успешно прошли проверку РосТехНадзора.
-            li.list__item Гарантированно проходите все необходимые проверки.
+            li.list__item
+              svg.svg-inline--fa.fa-check.fa-w-16(data-icon='check', data-prefix='fas', role='img', aria-hidden='true', width='16', height='16', focusable='false', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 512 512')
+                path(fill='#34c899', d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z')
+              | Допуск СРО без комиссии, оплата производится напрямую в СРО.
+            li.list__item
+              svg.svg-inline--fa.fa-check.fa-w-16(data-icon='check', data-prefix='fas', role='img', aria-hidden='true', width='16', height='16', focusable='false', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 512 512')
+                path(fill='#34c899', d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z')
+              | Все наши СРО успешно прошли проверку РосТехНадзора.
+            li.list__item
+              svg.svg-inline--fa.fa-check.fa-w-16(data-icon='check', data-prefix='fas', role='img', aria-hidden='true', width='16', height='16', focusable='false', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 512 512')
+                path(fill='#34c899', d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z')
+              | Гарантированно проходите все необходимые проверки.
       .col-5
-        .form-terms__wrapper
-          p.form-terms__header Узнать условия вступления в СРО с бесплатным представлением специалистов в НРС.
-          form.form-terms(action='#')
-            input#name(name='name', type='text', placeholder='Ваше имя')
-            input#phone(name='phone', type='text', placeholder='Номер телефона +7')
-            button.form-terms__submit Получить консультацию
-          p.form__terms--agreement Нажимая эту форму, вы даёте согласие на обработку персональных данных.
+        form.form__order-consult
+          p Узнать условия вступления в СРО с бесплатным представлением специалистов в НРС.
+          .form__order-consult--input__wrapper
+            input.form__order-consult--input(name="name", type="text", placeholder="Ваше имя")
+            input.form__order-consult--input(name="phone", type="text", placeholder="Номер телефона +7")
+            button.btn.btn__order-consult
+              | Получить консультацию
+              .btn__order-consult-arrow
+                svg.btn__order-consult-svg(xmlns='http://www.w3.org/2000/svg', width='18', height='14', viewBox='0 0 18 14')
+                  g
+                    g
+                      path(d='M11-.07l-1.5 1.5L14.07 6H0v2h14.07L9.5 12.57l1.5 1.5L18.07 7z')
+          p.subform Нажимая эту форму, вы даёте согласие на обработку персональных данных.
