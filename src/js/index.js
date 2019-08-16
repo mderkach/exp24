@@ -9,8 +9,25 @@ hamburger.addEventListener('click', () => {
 //cards menu toggle
 let triggers = document.querySelectorAll('.cards__menu-trigger')
 
-triggers.forEach(function(trigger) {
+triggers.forEach(trigger => {
   trigger.addEventListener('click', function() {
     this.parentElement.querySelector('.cards__menu-list').classList.toggle('is-active')
+  })
+})
+
+//form
+let inputs = document.querySelectorAll('.form__steps-input-radio')
+
+const removeClass = () => {
+  for (let i = 0; i < inputs.length; i++) {
+    inputs[i].parentElement.classList.remove('is-checked')
+  }
+}
+
+inputs.forEach(input => {
+  let label = input.parentElement
+  input.addEventListener('input', () => {
+    removeClass()
+    label.classList.add('is-checked')
   })
 })

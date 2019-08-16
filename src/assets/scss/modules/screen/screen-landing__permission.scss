@@ -1,0 +1,89 @@
+.section {
+  &__permission {
+    padding: 150px 0;
+
+    .header__h2 {
+      width: 100%;
+    }
+
+    .progress {
+      &-tracker {
+        width: 100%;
+        margin: 60px 0 25px;
+      }
+
+      &-step {
+        .progress-marker {
+          &:before {
+            background-color: #00aaff;
+          }
+
+          &:after {
+            background-color: #00aaff;
+            z-index: 0;
+          }
+        }
+      }
+
+      &-text {
+        margin-bottom: 15px;
+        padding: 0;
+        color: #00699e;
+        font-family: "ProximaLt";
+        font-size: rem(18);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.permission {
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 220px;
+    margin: 0 10px;
+    padding: 35px 30px;
+    border-radius: 1px;
+    background-color: #fff;
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+
+    &-wrapper {
+      @include make-row();
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &-counter {
+      color: #00aaff;
+      font-family: "ProximaRegular";
+      font-size: rem(50);
+      font-weight: 700;
+      line-height: rem(22);
+      margin-bottom: 35px;
+    }
+
+    &-header {
+      color: #20242e;
+      font-family: "ProximaLt";
+      font-size: rem(20);
+      font-weight: 600;
+      line-height: rem(22);
+      margin-bottom: 35px;
+    }
+
+    &-svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.screen {
+  &__you-get {
+    padding: 100px 0;
+
+    &-notify {
+      width: 100%;
+      max-width: 980px;
+      margin: 50px auto 0;
+      text-align: center;
+      color: #6d7783;
+      font-family: "ProximaRegular";
+      font-size: rem(18);
+      font-weight: 400;
+      line-height: rem(25);
+    }
+
+    .header__h2 {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.card {
+  &__you-get {
+    width: 100%;
+    max-width: 380px;
+    padding: 10px 10px 25px;
+    border-radius: 1px;
+    background-color: #fafafc;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &-img {
+      display: block;
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+    }
+
+    &-descr {
+      width: 100%;
+      margin-top: 15px;
+      text-align: center;
+      color: #00aaff;
+      font-family: "ProximaRegular";
+      font-size: rem(30);
+      font-weight: 700;
+    }
+  }
+}
