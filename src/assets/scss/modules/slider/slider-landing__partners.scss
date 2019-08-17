@@ -1,0 +1,26 @@
+.slider {
+  &-landing {
+    &__partners {
+      &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: auto;
+        padding: 20px 10px;
+      }
+
+      &--pagination {
+        @extend .slider-main__actions--pagination;
+
+        &--bullet {
+          @extend .slider-main__actions--pagination--bullet;
+
+          &--active {
+            @extend .slider-main__actions--pagination--bullet--active;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.screen {
+  &__faq {
+    padding: 140px 0 100px;
+  }
+}
+
+.faq {
+
+  &__wrapper {
+    margin-top: 45px;
+  }
+
+  &__item {
+    width: 100%;
+    padding: 25px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+
+    &.is-collapsed {
+      background-color: #f9f9f9;
+      border: 1px solid #f9f9f9;
+
+      .faq__item-header-trigger {
+        color: #000;
+      }
+
+      .faq__item-opener {
+        background-color: #00aaff;
+
+        &:after {
+          transform: rotate(0deg);
+        }
+
+        &:before {
+          transform: rotate(90deg)
+        }
+      }
+
+      .faq__item-collapse {
+        display: none;
+      }
+    }
+
+    &-header {
+      position: relative;
+      display: block;
+      width: 100%;
+
+      &-trigger {
+        display: block;
+        width: 100%;
+        color: #00699e;
+        font-family: "ProximaLt";
+        font-size: rem(20);
+        font-weight: 600;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &-opener {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(-50%);
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: #00699e;
+
+      &:before,
+      &:after {
+        position: absolute;
+        content: ' ';
+        height: 15px;
+        width: 3px;
+        background-color: #fff;
+        transform: rotate(90deg);
+        transition: all .3s ease
+      }
+
+
+    }
+
+    &-body {
+      margin-top: 20px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    height: 55px;
+    margin: 30px auto 0;
+    border-radius: 1px;
+    background-color: #00aaff;
+    color: #fff;
+    font-family: "ProximaLt";
+    font-size: rem(16);
+    text-transform: uppercase;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

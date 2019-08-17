@@ -31,3 +31,19 @@ inputs.forEach(input => {
     label.classList.add('is-checked')
   })
 })
+
+let accordionItems = document.querySelectorAll('.faq__item')
+
+accordionItems.forEach(item => {
+  let trigger = item.querySelector('.faq__item-header-trigger')
+  let target = item.querySelector('.faq__item-collapse')
+  let toggleClass = () => {
+    if (item.classList.contains('is-collapsed')) {
+      item.classList.remove('is-collapsed')
+    } else {
+      item.classList.add('is-collapsed')
+    }
+  }
+
+  trigger.addEventListener('click', toggleClass)
+})
