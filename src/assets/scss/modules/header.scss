@@ -65,6 +65,14 @@
   flex-direction: row;
   align-items: center;
 
+  &.is-opened {
+    @include media-breakpoint-down(lg) {
+      height: 100vh;
+      overflow: auto;
+      flex: 1 0 100%;
+    }
+  }
+
   &-nav {
     display: flex;
     justify-content: space-between;

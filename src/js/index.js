@@ -4,6 +4,12 @@ let menu = document.querySelector('.menu-mobile__wrapper')
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('is-active')
   menu.classList.toggle('is-active')
+
+  if (menu.classList.contains('is-active')) {
+    document.querySelector('.navbar').classList.add('is-opened')
+  } else {
+    document.querySelector('.navbar').classList.remove('is-opened')
+  }
 })
 
 //cards menu toggle
