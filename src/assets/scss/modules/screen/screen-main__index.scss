@@ -102,3 +102,19 @@
     }
   }
 }
+
+
+.scroll {
+  margin-top: 105px;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-15px);
+  }
+}
