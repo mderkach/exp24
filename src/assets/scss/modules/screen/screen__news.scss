@@ -78,8 +78,8 @@
       &--link {
         position: relative;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: center;
+        align-items: flex-end;
         width: 100%;
         max-width: 280px;
         height: 180px;
@@ -95,18 +95,37 @@
           margin: 0 auto 10px;
         }
 
+        &:hover {
+          text-decoration: none;
+          cursor: pointer;
+
+          .hover-filter {
+            background-color: #00aaff94
+          }
+        }
+
         p {
-          display: none;
           margin: 25px 35px;
           color: #ffffff;
           font-family: "ProximaRegular";
-          font-size: rem(25);
+          font-size: rem(20);
           font-weight: 700;
+          line-height: 1.2;
           z-index: 1;
 
           @include media-breakpoint-down(md) {
             display: block;
           }
+        }
+
+        .hover-filter {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
         }
       }
 

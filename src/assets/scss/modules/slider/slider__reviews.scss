@@ -82,25 +82,48 @@
       &--next,
       &--prev {
         position: absolute;
-        bottom: 35px;
+        top: -320px;
         z-index: 2;
-
-        @include media-breakpoint-down(md) {
-          display: none;
-        }
 
         &:hover {
           cursor: pointer;
         }
+
+        @include media-breakpoint-down(xl) {
+          top: unset;
+          transform: translateY(0);
+          bottom: 30px;
+        }
       }
 
       &--next {
-        transform: rotate(180deg);
-        right: 0;
+        @include media-breakpoint-up(xl) {
+          transform: rotate(180deg);
+          right: -50px;
+        }
+
+        @include media-breakpoint-down(xl) {
+          transform: rotate(180deg);
+          right: 0;
+        }
+
+        @include media-breakpoint-down(xs) {
+          right: 10px !important;
+        }
       }
 
       &--prev {
-        left: 0;
+        @include media-breakpoint-up(xl) {
+          left: -50px;
+        }
+
+        @include media-breakpoint-down(xl) {
+          left: 0;
+        }
+
+        @include media-breakpoint-down(xs) {
+          left: 10px !important;
+        }
       }
     }
 
@@ -123,6 +146,10 @@
           background-color: #00aaff;
         }
       }
+    }
+
+    &--controls {
+      @extend .slider-main__actions--controls;
     }
   }
 }

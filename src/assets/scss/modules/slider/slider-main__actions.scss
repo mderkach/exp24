@@ -111,7 +111,6 @@
           @include media-breakpoint-down(xl) {
             top: unset;
             transform: translateY(0);
-            bottom: 30px;
           }
         }
 
@@ -166,6 +165,14 @@
             background-color: #00aaff;
           }
         }
+      }
+
+      &--controls {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
       }
     }
   }
