@@ -28,6 +28,10 @@
         display: none;
       }
 
+      @include media-breakpoint-down(lg) {
+        overflow: auto;
+      }
+
       @include media-breakpoint-down(sm) {
         margin-left: 0;
         margin-right: 0;
