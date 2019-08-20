@@ -107,6 +107,10 @@
 .scroll {
   margin-top: 105px;
   animation: bounce 1s infinite alternate;
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
 }
 
 @keyframes bounce {
