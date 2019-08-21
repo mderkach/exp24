@@ -12,10 +12,10 @@
         each item in links
           if item.isActive
             li.menu-mobile__link
-              a.is-active(href='#') #{item.name}
+              a.menu-mobile__link--a.is-active(href='#') #{item.name}
           else
             li.menu-mobile__link
-              a(href='#') #{item.name}
+              a.menu-mobile__link--a(href='#') #{item.name}
       .menu-mobile__contacts-wrapper
         ul.menu-mobile__contacts
           li.menu-mobile__contacts-item
@@ -47,13 +47,16 @@
               | строение 2, офис 1620
     #services-mobile.tab-pane.tabs__menu-tab.fade(role='tabpanel', aria-labelledby='services-mobile-tab')
       ul.menu-mobile__link-wrapper
-        each item in services
-          if item.isActive
-            li.menu-mobile__link
-              a.is-active(href='#') #{item.name}
-          else
-            li.menu-mobile__link
-              a(href='#') #{item.name}
+        li.menu-mobile__link
+          .menu-mobile__link--dropdown
+            a.menu-mobile__link--a.--dropdown.collapsed(data-toggle='collapse' href='#sro' aria-controls='sro' aria-expanded='false') СРО
+            img.menu-mobile__link--img(src="../../.././../assets/img/svg/mobile-chveron.svg", alt="")
+          #sro.collapse
+            .menu-mobile__link--outer
+              a.menu-mobile__link--a(href='#') asd
+
+
+
       .menu-mobile__contacts-wrapper
         ul.menu-mobile__contacts
           li.menu-mobile__contacts-item
