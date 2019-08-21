@@ -1,0 +1,139 @@
+.form {
+  &__steps {
+    width: 100%;
+    padding: 55px 50px 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+    background-color: #ffffff;
+
+    &-step {
+      opacity: 1;
+
+      .header__h2 {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      &:not(.swiper-slide-active) {
+        opacity: 0;
+        height: 0;
+      }
+    }
+
+    &-label {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 55px;
+      padding: 0 15px;
+      margin-bottom: 25px;
+      border-radius: 1px;
+      border: 1px solid #dfe2e5;
+      background-color: rgba(233, 235, 239, 0.5);
+      color: #979fa8;
+      font-family: "ProximaRegular";
+      font-size: rem(20);
+      font-weight: 400;
+
+      &.is-checked {
+        border: 1px solid #1eb283;
+        color: #20242e;
+
+        >.form__steps-check {
+          display: block;
+        }
+      }
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+
+    &-input {
+      &-text {
+        @extend .form__steps-label;
+      }
+
+      &-radio {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        border: none;
+        z-index: -1;
+      }
+    }
+
+    &-check {
+      display: none;
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    &-nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &--prev,
+      &--next {
+        width: 100%;
+        max-width: 180px;
+        margin-top: 25px;
+        padding: 13px 20px 11px;
+        border: none;
+        border-radius: 1px;
+        background-color: #0af;
+        color: #fff;
+        font-size: 1rem;
+        text-transform: uppercase;
+
+        &:disabled {
+          opacity: 0.5;
+
+          &:hover {
+            background-color: #0af;
+          }
+        }
+
+        &:hover {
+          background-color: #00699e
+        }
+
+
+      }
+    }
+
+    &-notify {
+      margin-top: 30px;
+      color: #6d7783;
+      font-family: "ProximaRegular";
+      font-size: rem(14);
+      font-weight: 400;
+      line-height: rem(20);
+    }
+  }
+}
+
+.btn {
+  &__form {
+    &-steps {
+      @extend .btn__services;
+      width: 100%;
+      max-width: 100%;
+      color: #fff;
+      background-color: #00aaff;
+
+      &-arrow {
+        @extend .btn__services-arrow;
+        background-color: #00699e;
+      }
+
+      &-svg {
+        fill: #fff
+      }
+    }
+  }
+}

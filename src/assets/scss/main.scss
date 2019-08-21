@@ -103,8 +103,27 @@ li {
 @import "modules/slider/slider-landing__partners";
 @import "modules/screen/screen-landing__accreditations";
 @import "modules/screen/screen-landing__additional-order";
+@import "modules/slider/form-steps";
 
 //
 .--white {
   color: #fff
+}
+
+.step--progress {
+  &.is-active {
+    .step--progress-marker {
+      &::after {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+
+.--through {
+  &::after {
+    width: 200%;
+    left: 0;
+  }
 }
