@@ -28,11 +28,20 @@
     border-radius: 1px;
     background-color: #fafafc;
 
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 20px;
+    }
+
     &-wrapper {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
+
+      @include media-breakpoint-down(xl) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     &-img {

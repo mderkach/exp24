@@ -10,4 +10,12 @@ var swiper = new Swiper('.slider-landing__partners', {
     bulletClass: 'slider-landing__partners--pagination--bullet',
     bulletActiveClass: 'slider-landing__partners--pagination--bullet--active',
   },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+    },
+    576: {
+      slidesPerView: 1,
+    },
+  },
 })

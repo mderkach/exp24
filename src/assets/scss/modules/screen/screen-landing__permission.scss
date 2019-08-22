@@ -2,6 +2,12 @@
   &__permission {
     padding: 150px 0;
 
+    &-outer {
+      @include media-breakpoint-down(sm) {
+        margin: 0;
+      }
+    }
+
     .header__h2 {
       width: 100%;
     }
@@ -38,11 +44,31 @@
 }
 
 .permission {
+
+  &__outer {
+    overflow: auto;
+
+    .progress-tracker {
+      flex: 1 0 1180px;
+
+      .progress-step {
+        min-width: 240px;
+        max-width: 240px;
+
+        &:nth-child(1),
+        &:nth-last-child(1) {
+          min-width: 230px;
+          max-width: 230px;
+        }
+      }
+    }
+  }
+
   &__card {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 220px;
+    flex: 1 0 220px;
+    width: 220px;
     margin: 0 10px;
     padding: 35px 30px;
     border-radius: 1px;
@@ -61,6 +87,10 @@
       width: 100%;
       margin-left: 0;
       margin-right: 0;
+
+      @include media-breakpoint-down(xl) {
+        flex-wrap: nowrap;
+      }
     }
 
     &-counter {

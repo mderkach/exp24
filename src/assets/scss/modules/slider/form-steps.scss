@@ -6,6 +6,10 @@
     border-radius: 1px;
     background-color: #ffffff;
 
+    @include media-breakpoint-down(xl) {
+      padding: 55px 15px 50px;
+    }
+
     &-step {
       opacity: 1;
 
@@ -89,6 +93,10 @@
         color: #fff;
         font-size: 1rem;
         text-transform: uppercase;
+
+        @include media-breakpoint-down(xl) {
+          max-width: 150px;
+        }
 
         &:disabled {
           opacity: 0.5;
