@@ -74,6 +74,10 @@
         line-height: rem(20);
         margin-bottom: 7px;
 
+        &:hover {
+          text-decoration: none;
+        }
+
         &-img {
           display: block;
           width: 100%;

@@ -48,6 +48,10 @@
   &__outer {
     overflow: auto;
 
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     .progress-tracker {
       flex: 1 0 1180px;
 

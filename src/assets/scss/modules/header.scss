@@ -122,6 +122,10 @@
     @include media-breakpoint-down(xl) {
       font-size: rem(16)
     }
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
