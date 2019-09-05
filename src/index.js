@@ -6,6 +6,7 @@ import 'bootstrap.native/dist/bootstrap-native-v4'
 import './js/slider__partners'
 import './js/slider__additional-order'
 import './js/slider__form-steps'
+import './js/slider__services'
 // SCSS
 import './assets/scss/main.scss'
 
