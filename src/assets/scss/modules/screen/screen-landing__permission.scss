@@ -21,7 +21,8 @@
       &-step {
         .progress-marker {
           &:before {
-            background-color: #00aaff;
+            background-color: #01699e;
+            border: 5px solid #00aaff;
           }
 
           &:after {
