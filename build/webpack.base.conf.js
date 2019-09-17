@@ -31,7 +31,7 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].[hash].js`,
     path: PATHS.dist,
-    publicPath: '/',
+    publicPath: '',
   },
   module: {
     rules: [
@@ -48,7 +48,9 @@ module.exports = {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]',
+          name: 'fonts/[name].[ext]',
+          mimetype: 'application/font-woff',
+          publicPath: '/',
         },
       },
       {
