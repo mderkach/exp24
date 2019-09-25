@@ -75,11 +75,12 @@
       }
 
       &-descr {
+        display: flex;
+        align-items: center;
         color: #0d1116;
         font-family: "ProximaLt";
         font-size: rem(18);
         font-weight: 600;
-        line-height: rem(20);
       }
 
       &-outer {
