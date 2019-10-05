@@ -56,10 +56,15 @@
   z-index: 0;
   top: -65px;
   right: -260px;
+  width: 110vh;
 
   @media screen and(max-width: 1200px) {
     right: -225px;
     width: 80%;
+
+    @media screen and (max-height: 865px) {
+      height: 125%;
+    }
   }
 
   @media screen and (min-width: 992px) and (max-width: 1024) {
