@@ -67,9 +67,10 @@
 
   &.is-opened {
     @include media-breakpoint-down(lg) {
-      height: 100vh;
+      // height: 100vh;
+      box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
       overflow: auto;
-      flex: 1 0 100%;
+      // flex: 1 0 100%;
     }
   }
 
@@ -159,12 +160,13 @@
   &__callback {
     width: 100%;
     max-width: 196px;
-    padding: 13px 20px 11px 20px;
+    padding: 13px 5px 11px;
     border: 1px solid $accent;
     border-radius: 1px;
     background-color: $accent;
     color: #fff;
     font-size: rem(16);
+    font-weight: bold;
     text-transform: uppercase;
   }
 }

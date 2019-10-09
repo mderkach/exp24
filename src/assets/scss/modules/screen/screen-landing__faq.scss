@@ -12,7 +12,6 @@
 
   &__item {
     width: 100%;
-    padding: 25px;
     border-radius: 4px;
     background-color: #fff;
     border: 1px solid #e6e6e6;
@@ -51,6 +50,7 @@
       &-trigger {
         display: block;
         width: 100%;
+        padding: 25px;
         color: #00699e;
         font-family: "ProximaLt";
         font-size: rem(20);
@@ -60,13 +60,17 @@
           cursor: pointer;
           text-decoration: none;
         }
+
+        @include media-breakpoint-down(sm) {
+          width: 95%;
+        }
       }
     }
 
     &-opener {
       position: absolute;
       top: 50%;
-      right: 0;
+      right: 25px;
       display: flex;
       justify-content: center;
       align-items: center;

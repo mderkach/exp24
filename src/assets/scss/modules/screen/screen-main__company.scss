@@ -9,6 +9,10 @@
 
       h2 {
         margin-top: 120px;
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 30px;
+        }
       }
     }
   }
@@ -28,6 +32,7 @@
       }
 
       p {
+        width: 100%;
         color: #6d7783;
         font-family: "ProximaLt";
         font-size: rem(26);
@@ -41,7 +46,8 @@
         @include media-breakpoint-down(xs) {
           position: relative;
           top: 7px;
-          margin-right: 30px;
+          margin-right: 25px;
+          width: 50px;
         }
       }
     }
