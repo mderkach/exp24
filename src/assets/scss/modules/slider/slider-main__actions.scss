@@ -157,6 +157,10 @@
           border-radius: 50%;
           background-color: #bec4ca;
 
+          &:hover {
+            cursor: pointer;
+          }
+
           &:nth-last-child(1) {
             margin-right: 0;
           }

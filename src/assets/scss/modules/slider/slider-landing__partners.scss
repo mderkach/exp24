@@ -1,13 +1,19 @@
 .slider {
   &-landing {
     &__partners {
+      height: 155px;
+      padding-bottom: 55px;
+
       &-item {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 180px;
-        height: auto;
-        padding: 20px 10px;
+
+        &-img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
       }
 
       &--pagination {
