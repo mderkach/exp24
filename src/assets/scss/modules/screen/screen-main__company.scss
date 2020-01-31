@@ -126,6 +126,12 @@
     background: #fff;
     color: #00699e;
 
+    &:hover {
+      cursor: pointer;
+      color: #00699e;
+      text-decoration: none;
+    }
+
     &-arrow {
       @extend .btn__consult-arrow;
 
