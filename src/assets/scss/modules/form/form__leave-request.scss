@@ -1,0 +1,56 @@
+.form {
+  &__leave {
+    &-request {
+      @extend .form__order-consult;
+      position: absolute;
+      bottom: -105px;
+      right: 20px;
+      padding: 35px 50px;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        bottom: unset;
+        right: unset;
+      }
+
+      h4 {
+        font-family: "ProximaLt";
+        font-size: rem(30);
+        font-weight: 700;
+        line-height: rem(50);
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      p {
+        color: #6d7783;
+        font-family: "ProximaRegular";
+        font-size: rem(14);
+        font-weight: 400;
+        line-height: rem(20);
+        text-align: left;
+        margin-bottom: 0;
+      }
+
+      &--input {
+        @extend .form__order-consult--input;
+
+        &__wrapper {
+          @extend .form__order-consult--input__wrapper;
+
+          .btn__leave-request {
+            @extend .btn__order-consult;
+
+            &-arrow {
+              @extend .btn__order-consult-arrow;
+            }
+
+            &-svg {
+              @extend .btn__order-consult-svg;
+            }
+          }
+        }
+      }
+    }
+  }
+}
