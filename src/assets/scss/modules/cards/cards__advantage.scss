@@ -1,11 +1,10 @@
 .cards {
   &__advantages {
     display: flex;
-    flex-direction: column;
     width: 100%;
-    max-width: 380px;
+    max-width: 580px;
     margin-bottom: 20px;
-    padding: 50px 25px 70px;
+    padding: 35px 25px 60px;
     border-radius: 1px;
     background-color: rgba($color: #e9ebef, $alpha: .5);
 
@@ -22,6 +21,10 @@
       }
     }
 
+    &--body {
+      margin-left: 25px;
+    }
+
     &--img {
       width: 75px;
       height: 75px;
@@ -29,13 +32,11 @@
     }
 
     &--header {
-      margin-top: 40px;
       margin-bottom: 15px;
       color: #00699e;
       font-family: "ProximaRegular";
       font-size: rem(30);
       font-weight: 700;
-      text-align: center;
     }
 
     &--descr {
@@ -44,7 +45,6 @@
       font-size: rem(16);
       font-weight: 400;
       line-height: rem(22);
-      text-align: center;
       margin-bottom: 0;
     }
   }
