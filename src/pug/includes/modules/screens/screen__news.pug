@@ -1,3 +1,6 @@
+- news = [{"title": "Обязательства, которые берет на себя орган сертификации","excerpt": "Отрывок","link": "#","image": "./assets/img/news-demo1.jpg"},{"title": "Как заменить декларирование обязательной сертификацией","excerpt": "Отрывок","link": "#","image": "./assets/img/news-demo2.jpg"},{"title": "Условия сертификации продукции, выпускаемой в домашних условиях","excerpt": "Отрывок","link": "#","image": "./assets/img/news-demo3.jpg"},{"title": "Сертификация единичного изделия","excerpt": "Отрывок","link": "#","image": "./assets/img/news-demo4.jpg"}];
+- articles = [{"title": "Обязательства, которые берет на себя орган сертификации","excerpt": "Отрывок","link": "#","image": "./assets/img/news-demo1.jpg"},{"title": "Как заменить декларирование обязательной сертификацией","excerpt": "Отрывок","link": "#","image": "./assets/img/news-demo2.jpg"},{"title": "Условия сертификации продукции, выпускаемой в домашних условиях","excerpt": "Отрывок","link": "#","image": "./assets/img/news-demo3.jpg"},{"title": "Сертификация единичного изделия","excerpt": "Отрывок","link": "#","image": "./assets/img/news-demo4.jpg"}];
+
 section.screen__news
   .container
     .row
@@ -10,34 +13,22 @@ section.screen__news
           a#articles-tab.nav-link.tabs__news-link(data-toggle='tab', href='#articles', role='tab', aria-controls='articles', aria-selected='false') Статьи
   #myTabContent.container.tab-content.tabs__news-content
     #news.row.tabs__news-tab.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='news-tab')
-      a.tabs__news-tab--link(href="#")
-        img.tabs__news-tab--img(src="./assets/img/news-demo1.jpg", alt="")
-        .hover-filter
-        p Обязательства, которые берет на себя орган сертификации
-      a.tabs__news-tab--link(href="#")
-        img.tabs__news-tab--img(src="./assets/img/news-demo2.jpg", alt="")
-        .hover-filter
-        p Как заменить декларирование обязательной сертификацией
-      a.tabs__news-tab--link(href="#")
-        img.tabs__news-tab--img(src="./assets/img/news-demo3.jpg", alt="")
-        .hover-filter
-        p Условия сертификации продукции, выпускаемой в домашних условиях
-      a.tabs__news-tab--link(href="#")
-        img.tabs__news-tab--img(src="./assets/img/news-demo4.jpg", alt="")
-        .hover-filter
-        p Сертификация единичного изделия
+      each item in news
+        .tabs__news-card
+          a.tabs__card-link(href=item.link)
+          .tabs__news-card-img-wrapper
+            img.tabs__news-card-img(src=item.image alt="")
+            .hover-filter
+          p.tabs__news-card-title #{item.title}
+          p.tabs__news-card-excerpt #{item.excerpt}
     #articles.row.tabs__news-tab.tab-pane.fade(role='tabpanel', aria-labelledby='articles-tab')
-      a.tabs__news-tab--link(href="#")
-        img.tabs__news-tab--img(src="./assets/img/news-demo1.jpg", alt="")
-        .hover-filter
-      a.tabs__news-tab--link(href="#")
-        img.tabs__news-tab--img(src="./assets/img/news-demo4.jpg", alt="")
-        .hover-filter
-      a.tabs__news-tab--link(href="#")
-        img.tabs__news-tab--img(src="./assets/img/news-demo2.jpg", alt="")
-        .hover-filter
-      a.tabs__news-tab--link(href="#")
-        img.tabs__news-tab--img(src="./assets/img/news-demo3.jpg", alt="")
-        .hover-filter
+      each item in articles
+        .tabs__news-tab--item
+          a.tabs__news-tab--link(href=item.link)
+          .tabs__news-tab--img-wrapper
+            img.tabs__news-tab--img(src=item.image alt="")
+            .hover-filter
+          p.tabs__news-tab--item-title #{item.title}
+          p.tabs__news-tab--item-excerpt #{item.excerpt}
     .tabs__news-more
       a#news-tab.nav-link.tabs__news-link(href='#') Смотреть все новости
