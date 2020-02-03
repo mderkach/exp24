@@ -2,6 +2,10 @@
   &__additional {
     &-order {
       padding: 120px 0;
+
+      @include media-breakpoint-down(md) {
+        padding: 50px;
+      }
     }
   }
 }

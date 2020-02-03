@@ -9,4 +9,9 @@ var swiper = new Swiper('.additional-order__outer', {
     bulletClass: 'additional-order--pagination--bullet',
     bulletActiveClass: 'additional-order--pagination--bullet--active',
   },
+  breakpoints: {
+    991: {
+      slidesPerView: 1,
+    },
+  },
 })
