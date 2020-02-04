@@ -1,0 +1,46 @@
+.screen {
+  &__bankguaranties {
+    &-about {
+      padding: 120px 0 155px;
+    }
+  }
+}
+
+.bankguaranties {
+  &-about {
+    &__preheader {
+      color: #2557b7;
+      font-size: rem(20);
+      font-weight: 700;
+      line-height: rem(50);
+    }
+
+    &__header {
+      margin-bottom: 50px;
+    }
+
+    &__descr {
+      margin-bottom: 50px;
+      color: #6d7783;
+      font-size: rem(20);
+      font-weight: 400;
+      line-height: rem(30);
+    }
+  }
+}
+
+.btn {
+  &__bankguaranties {
+    &-about {
+      @extend .btn__consult;
+
+      &-arrow {
+        @extend .btn__consult-arrow;
+      }
+
+      &-svg {
+        fill: #fff;
+      }
+    }
+  }
+}

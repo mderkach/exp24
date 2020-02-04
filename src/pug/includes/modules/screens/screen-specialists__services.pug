@@ -1,4 +1,4 @@
-- var cards=[{img:"./assets/img/svg/speccheck.svg",title:"Проверка специалистов",descr:"Проверим документы Ваших специалистов на соответствие требованиям НРС, предотвратим получение отказа"},{img:"./assets/img/svg/specsearch.svg",title:"Подбор специалистов",descr:"Найдем уже внесенного в НРС специалиста с оформлением в штат или без"},{img:"./assets/img/svg/specadd.svg",title:"Внесение специалистов",descr:"Подготовим весь необходимый пакет документов на Вашего специалиста и гарантированно внесем его в НРС"},{img:"./assets/img/svg/specspeed.svg",title:"Ускорение внесения специалистов",descr:"Если вы уже подали документы и ждете внесения - мы ускорим за 24 часа"},{img:"./assets/img/svg/specrepeat.svg",title:"Обжалование отказа",descr:"В случае если Вы получили отказ - мы можем провести проверку документов, устранить ошибки и обжаловать отказ"},{img:"./assets/img/svg/specdoc.svg",title:"Подготовка документов",descr:"Сделаем все необходимые документы, проведем повышение квалификации и проконсультируем по всем вопросам"}];
+block services
 
 section.screen__advantages(style='backgorund-color: #fff')
   .container
@@ -6,7 +6,7 @@ section.screen__advantages(style='backgorund-color: #fff')
       .col-12
         h2.header__h2.text-center Наши услуги
     .row.cards__spec-service-wrapper
-      each card in cards
+      each card in services
         .col-md-4.col-12.cards__spec-service
           .cards__spec-service-body
             img.cards__spec-service--img(src=card.img, alt='')
