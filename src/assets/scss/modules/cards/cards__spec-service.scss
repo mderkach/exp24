@@ -1,0 +1,45 @@
+.cards {
+  &__spec {
+    &-service {
+      margin: 10px 0;
+
+      &-wrapper {
+        margin-top: 30px;
+      }
+
+      &-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding: 55px 25px 65px;
+        border-radius: 1px;
+        background-color: rgba($color: #e9ebef, $alpha: .5);
+      }
+
+      &--img {
+        width: 75px;
+        height: 75px;
+      }
+
+      &--info {
+        margin-top: 45px;
+      }
+
+      &--header {
+        color: #00699e;
+        font-size: rem(25);
+        font-weight: 700;
+        text-align: center;
+      }
+
+      &--descr {
+        color: #6d7783;
+        font-size: rem(16);
+        font-weight: 400;
+        line-height: rem(22);
+        text-align: center;
+      }
+    }
+  }
+}
