@@ -1,0 +1,51 @@
+.screen__mchs-get-alt {
+  padding: 115px 0 140px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+  }
+
+  &-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 65px 120px 65px 50px;
+    border-radius: 1px;
+    background: #fff;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      padding: 65px 15px;
+    }
+
+    &--head {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &-img {
+      img {
+        width: 67px;
+        height: 76px;
+      }
+    }
+
+    &--body {
+      &-descr {
+        margin-top: 35px;
+        margin-bottom: 40px;
+        color: #6d7783;
+        font-size: rem(20);
+        font-weight: 400;
+        line-height: rem(30);
+
+        &:nth-last-child(1) {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

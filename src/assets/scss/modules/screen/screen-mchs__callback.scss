@@ -1,0 +1,67 @@
+.screen {
+  &__mchs {
+    &-callback {
+      padding: 75px 0;
+      background-image: linear-gradient(270deg, #00aaff 0%, #00699e 100%);
+
+      &--form {
+        margin-top: 30px;
+
+        input {
+          width: 100%;
+          margin: 10px 0;
+          padding: 15px 15px 12px 15px;
+          border-radius: 1px;
+          border: 1px solid rgba($color: #dfe2e5, $alpha: .2);
+          background-color: rgba(233, 235, 239, 0.2);
+
+          &:focus {
+            border-color: rgba($color: #dfe2e5, $alpha: 1);
+            outline: none;
+          }
+
+          &::placeholder {
+            color: rgba($color: #fff, $alpha: .5);
+            font-size: rem(20);
+            font-weight: 400;
+          }
+        }
+
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin: 10px 0;
+          padding: 0;
+          border-radius: 1px;
+          border: 1px solid #dfe2e5;
+          background-color: #fff;
+          color: #00699e;
+          font-family: "ProximaTh";
+          font-size: rem(16);
+          text-transform: uppercase;
+
+          span {
+            width: 100%;
+          }
+
+          .arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 0;
+            min-width: 55px;
+            min-height: 55px;
+            background-color: #e9ebef;
+
+            svg {
+              fill: #00699e;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.screen__mchs-need {
+  padding: 140px 0;
+
+  &-subheader {
+    margin: 35px 0 65px;
+    color: #6d7783;
+    font-size: rem(20);
+    font-weight: 400;
+    line-height: rem(30);
+    text-align: center;
+  }
+}
+
+.card {
+  &__mchs {
+    &-need {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 25px 35px;
+      background-color: #fff;
+
+
+      &-descr {
+        margin-left: 20px;
+        color: #20242e;
+        font-family: "ProximaLt";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 22px;
+
+        &.--transparent {
+          padding: 25px 0;
+          color: #00aaff;
+          font-size: rem(20);
+          font-weight: 700;
+          line-height: rem(22);
+        }
+      }
+
+      svg {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+}

@@ -113,10 +113,18 @@ li {
 @import "modules/screen/screen-bankguaranties__products";
 @import "modules/screen/screen-bankguaranites__payment";
 @import "modules/cards/cards-bank-products";
+@import "modules/screen/screen-mchs__get";
+@import "modules/screen/screen-mchs__callback";
+@import "modules/screen/screen-mchs__get-alt";
+@import "modules/screen/screen-mchs__need";
 
 //
 .--white {
   color: #fff
+}
+
+.--black {
+  color: #000;
 }
 
 .step--progress {
@@ -139,4 +147,12 @@ li {
 
 .fluid-wrapper {
   height: 100vh;
+}
+
+.screen-descr {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "ProximaLt";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 36px;
 }

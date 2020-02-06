@@ -1,0 +1,67 @@
+.screen {
+  &__mchs {
+    &-get {
+      padding: 140px 0 110px;
+
+      &--descr {
+        margin: 35px 0;
+        color: #6d7783;
+        font-size: rem(20);
+        font-weight: 400;
+        line-height: rem(30);
+      }
+
+      &--list {
+        &-header {
+          color: #20242e;
+          font-size: rem(20);
+          font-weight: 700;
+          line-height: rem(45);
+        }
+
+        &-item {
+          margin-bottom: 36px;
+          color: #979fa8;
+          font-family: "ProximaLt";
+          font-size: rem(20);
+          font-weight: 600;
+          line-height: rem(36);
+
+          svg {
+            margin-right: 25px;
+          }
+        }
+      }
+
+      &-card {
+        margin-top: 85px;
+        padding: 65px 45px;
+        background-color: rgba($color: #e9ebef, $alpha: .5);
+
+        &-info {
+          margin-bottom: 30px;
+
+          &:nth-last-child(1) {
+            margin-bottom: 0;
+          }
+        }
+
+        &-heading {
+          margin-bottom: 0;
+          color: #6d7783;
+          font-size: rem(16);
+          font-weight: 400;
+          line-height: rem(22);
+          text-transform: uppercase;
+        }
+
+        &-descr {
+          color: #00699e;
+          font-size: rem(30);
+          font-weight: 700;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
