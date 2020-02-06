@@ -4,6 +4,11 @@
     padding: 55px 35px 35px;
     background: #fff;
 
+    @include media-breakpoint-down(md) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
     &-outer {
       margin-top: 60px;
     }
@@ -58,6 +63,10 @@
 
     >.btn__bankguaranties-about {
       max-width: 100%;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 50px;
+      }
     }
 
     &-title {
@@ -88,6 +97,10 @@
     &--additionals {
       display: flex;
       margin-top: 55px;
+
+      @include media-breakpoint-down(md) {
+        flex-wrap: wrap;
+      }
 
       &-item {
         display: inline-block;
