@@ -1,0 +1,145 @@
+.faq {
+  &__container {
+    @extend .article;
+    padding: 85px 0 70px;
+
+    @include media-breakpoint-down(md) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__wrapper {
+    &--extended {
+      padding: 0px 65px;
+
+      @include media-breakpoint-down(md) {
+        padding: 0 25px;
+      }
+    }
+  }
+
+  &__categories {
+    &-wrapper {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__info {
+    &-wrapper {
+      padding: 65px 0;
+    }
+
+    &-descr {
+      margin-top: 40px;
+      color: #4385f5;
+      font-size: rem(30);
+      font-weight: 700;
+      line-height: rem(40);
+      margin-bottom: 5px;
+      text-align: center;
+
+      @include media-breakpoint-down(md) {
+        font-size: rem(20);
+        line-height: rem(25);
+      }
+    }
+
+    &-img {
+      display: block;
+      width: 75px;
+      height: 75px;
+      margin: 0 auto;
+    }
+
+    &-form {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      margin: 30px auto 0;
+
+      &--input {
+        display: block;
+        width: 100%;
+        padding: 15px 15px 12px;
+        margin-bottom: 25px;
+        border-radius: 1px;
+        border: 1px solid #dfe2e5;
+        background-color: rgba(233, 235, 239, 0.5);
+        color: #000;
+        font-size: rem(20);
+        font-weight: 400;
+        resize: none;
+
+        &::placeholder {
+          color: #979fa8;
+        }
+      }
+
+      &--submit {
+        @extend .btn__consult;
+        max-width: 100%;
+        margin-bottom: 25px;
+
+        &-arrow {
+          @extend .btn__consult-arrow;
+        }
+
+        &-svg {
+          fill: #fff;
+        }
+      }
+
+      &--notify {
+        color: #6d7783;
+        font-size: rem(14);
+        font-weight: 400;
+        line-height: rem(20);
+      }
+    }
+  }
+}
+
+.tabs {
+  &__faq {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &-item {
+      display: block;
+      width: 100%;
+      max-width: 150px;
+      min-width: 150px;
+      margin-bottom: 10px;
+    }
+
+    &-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 18px 0;
+      text-align: center;
+      border-radius: 0 1px 1px 0;
+      background-color: #f3f5f9;
+      color: #00699e;
+      font-family: "ProximaTh";
+      font-size: rem(16);
+      line-height: 1;
+      text-transform: uppercase;
+
+      &.active {
+        background-color: #00aaff;
+        color: #fff;
+      }
+    }
+
+    &-tab {
+      &:not(.active) {
+        display: none;
+      }
+    }
+  }
+}

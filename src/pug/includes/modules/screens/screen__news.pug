@@ -23,12 +23,12 @@ section.screen__news
           p.tabs__news-card-excerpt #{item.excerpt}
     #articles.row.tabs__news-tab.tab-pane.fade(role='tabpanel', aria-labelledby='articles-tab')
       each item in articles
-        .tabs__news-tab--item
-          a.tabs__news-tab--link(href=item.link)
-          .tabs__news-tab--img-wrapper
-            img.tabs__news-tab--img(src=item.image alt="")
+        .tabs__news-card
+          a.tabs__card-link(href=item.link)
+          .tabs__news-card-img-wrapper
+            img.tabs__news-card-img(src=item.image alt="")
             .hover-filter
-          p.tabs__news-tab--item-title #{item.title}
-          p.tabs__news-tab--item-excerpt #{item.excerpt}
+          p.tabs__news-card-title #{item.title}
+          p.tabs__news-card-excerpt #{item.excerpt}
     .tabs__news-more
       a#news-tab.nav-link.tabs__news-link(href='#') Смотреть все новости
