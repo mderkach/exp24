@@ -12,9 +12,9 @@ p {
 .header {
   &__h1 {
     color: #20242e;
-    font-size: rem(60);
+    font-size: rem(50);
     font-weight: 700;
-    line-height: rem(60);
+    line-height: rem(50);
 
     @include media-breakpoint-down(lg) {
       font-size: rem(40);

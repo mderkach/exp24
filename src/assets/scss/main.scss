@@ -138,6 +138,9 @@ li {
   }
 }
 
+.header__h1.--long {
+  font-size: rem(50);
+}
 
 .--through {
   &::after {
@@ -156,4 +159,11 @@ li {
   font-size: 20px;
   font-weight: 600;
   line-height: 36px;
+}
+
+
+.list--you-get {
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 45px;
+  }
 }
