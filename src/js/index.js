@@ -1,3 +1,7 @@
+import Inputmask from 'inputmask'
+let phones = document.querySelectorAll('input[name="phone"]')
+let inputmask = new Inputmask('+7(999)999-99-99')
+phones.forEach(input => inputmask.mask(input))
 //hamb
 let hamburger = document.querySelector('.hamburger')
 let menu = document.querySelector('.menu-mobile__wrapper')
@@ -75,6 +79,21 @@ if (searchInput) {
         target.parentElement.parentElement.style.display = 'block'
       } else {
         target.parentElement.parentElement.style.display = 'none'
+      }
+    })
+  })
+}
+
+let files = document.querySelectorAll('input[type=file]')
+if (files) {
+  files.forEach(input => {
+    input.addEventListener('change', () => {
+      let file = input.value
+      if (file.length > 0) {
+        input.parentElement.classList.add('valid')
+      } else {
+        input.parentElement.classList.remove('valid')
+        input.parentElement.classList.add('not-valid')
       }
     })
   })
