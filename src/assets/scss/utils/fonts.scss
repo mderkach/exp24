@@ -3,6 +3,6 @@
 @import "../utils/mixins";
 
 @include font-face("ProximaRegular", "../fonts/ProximaNovaRegular/ProximaNovaRegular");
-@include font-face("ProximaLt", "../fonts/ProximaNovaLt/ProximaNovaLt", bold);
+@include font-face("ProximaLt", "../fonts/ProximaNovaLt/ProximaNovaLt");
 @include font-face("ProximaLight", "../fonts/ProximaNovaLight/ProximaNovaLight");
 @include font-face("ProximaTh", "../fonts/ProximaNovaTh/ProximaNovaTh");

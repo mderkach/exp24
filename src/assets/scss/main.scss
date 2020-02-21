@@ -138,8 +138,14 @@ li {
   }
 }
 
-.header__h1.--long {
-  font-size: rem(50);
+.header__h1 {
+  &.--long {
+    font-size: rem(50);
+  }
+
+  &.bankguarantee {
+    margin-bottom: 54px;
+  }
 }
 
 .--through {

@@ -8,6 +8,21 @@
     border-radius: 1px;
     background-color: rgba($color: #e9ebef, $alpha: .5);
 
+    &.white {
+      padding-top: 25px;
+      padding-bottom: 35px;
+      background-color: #fff;
+
+      .cards__advantages--header {
+        color: #20242e;
+      }
+
+      .cards__advantages--img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
     &-outer {
       @include make-row();
       display: flex;

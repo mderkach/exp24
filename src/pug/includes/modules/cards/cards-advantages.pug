@@ -1,8 +1,8 @@
 block cardsAdvantages
 
 .cards__advantages-outer
-  each card in cards
-    .cards__advantages
+  each card in cardsAdvantages
+    .cards__advantages(class=advantagesClass)
       img.cards__advantages--img(src=card.img, alt='')
       .cards__advantages--body
         p.cards__advantages--header
