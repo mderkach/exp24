@@ -59,6 +59,15 @@
       margin: 0 auto 15px;
       padding: 0 15px;
     }
+
+    h1 {
+      @extend .header__h1;
+      @extend .article__header;
+    }
+
+    img {
+      @extend.article__img-example;
+    }
   }
 
   &__header {
@@ -76,6 +85,10 @@
 
     @include media-breakpoint-down(lg) {
       padding: 0 10px;
+    }
+
+    p {
+      @extend .article__paragraph;
     }
   }
 

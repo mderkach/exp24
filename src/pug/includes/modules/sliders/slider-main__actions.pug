@@ -4,10 +4,10 @@
   .swiper-wrapper
     each slide in slider
       .swiper-slide.col-12.slider-main__actions--slide
-        img.col-12.slider-main__actions--slide--img(src=slide.img, alt="")
+        img(src=slide.img, alt="")
         .slider-main__actions--slide--info
-          h3.slider-main__actions--slide--header #{slide.header}
-          p.slider-main__actions--slide--descr #{slide.descr}
+          h3 #{slide.header}
+          p #{slide.descr}
           a.btn.btn__services(href=slide.link)
             | #{slide.button}
             .btn__services-arrow
