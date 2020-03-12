@@ -112,6 +112,15 @@
       font-weight: 400;
       line-height: rem(30);
       margin-bottom: 20px;
+      min-height: 120px;
+
+      @include media-breakpoint-down(lg) {
+        min-height: 80px;
+      }
+
+      @include media-breakpoint-down(md) {
+        min-height: unset;
+      }
 
       @include media-breakpoint-down(xs) {
         display: none;
