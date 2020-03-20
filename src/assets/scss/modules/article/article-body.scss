@@ -87,6 +87,16 @@
       padding: 0 10px;
     }
 
+    h1 {
+      @extend .header__h1;
+      @extend .document__header;
+    }
+
+    h2 {
+      @extend .header__h2;
+      @extend .document__subheader;
+    }
+
     p {
       @extend .article__paragraph;
     }
