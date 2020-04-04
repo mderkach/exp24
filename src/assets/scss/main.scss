@@ -21,8 +21,8 @@ body {
   font-size: $mainFontSize;
   font-weight: $mainFontWeight;
   overflow-x: hidden;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
