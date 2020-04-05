@@ -41,8 +41,11 @@
     }
 
     &--img {
+      display: block;
       width: 75px;
       height: 75px;
+      min-width: 75px;
+      min-height: 75px;
       margin: 0 auto;
     }
 

@@ -26,7 +26,8 @@
         width: 100%;
         max-width: 160px;
         height: 60px;
-        object-fit: cover;
+        margin-bottom: 18px;
+        object-fit: contain;
       }
 
       &:hover {
@@ -55,9 +56,9 @@
 
       &--author {
         color: #20242e;
-        font-family: "ProximaLt";
+        font-family: "ProximaRegular";
         font-size: rem(16);
-        font-weight: 600;
+        font-weight: 400;
 
         &-job {
           color: rgba($color: #20242e, $alpha: 0.5);

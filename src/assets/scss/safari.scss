@@ -1,0 +1,52 @@
+.--is-safari {
+
+  .bankguaranties-about__preheader {
+    -webkit-text-stroke: 1px #2557b7;
+  }
+
+  .header__h1 {
+    -webkit-text-stroke: 1px #000;
+
+    &.--white {
+      -webkit-text-stroke: 1px #fff;
+    }
+  }
+
+  .header__h2 {
+    -webkit-text-stroke: 1px #000;
+
+    &.--white {
+      -webkit-text-stroke: 1px #fff;
+    }
+  }
+
+  .list__header {
+    &.--white {
+      -webkit-text-stroke: 1px #fff;
+    }
+  }
+
+  .cards__spec-service--header {
+    -webkit-text-stroke: 1px #00699e;
+  }
+
+  .screen__get-consult--preheading {
+    -webkit-text-stroke: 1px rgba($color: #fff, $alpha: .7);
+  }
+
+  .screen__get-consult--heading {
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  .step__name {
+    -webkit-text-stroke: 1px #000;
+  }
+
+  .services__terms--header {
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  .servicepack__header {
+    -webkit-text-stroke: 1px #0af;
+  }
+}

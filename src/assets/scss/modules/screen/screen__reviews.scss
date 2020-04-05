@@ -1,12 +1,11 @@
 .screen {
   &__reviews {
     padding-top: 220px;
-    padding-bottom: 160px;
+    padding-bottom: 100px;
     background-position: 50% 0;
 
     @include media-breakpoint-down(md) {
       padding-top: 150px;
-      padding-bottom: 100px;
     }
 
     h2 {

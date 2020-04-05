@@ -34,9 +34,9 @@
       p {
         width: 100%;
         color: #6d7783;
-        font-family: "ProximaLt";
+        font-family: "ProximaRegular";
         font-size: rem(26);
-        font-weight: 600;
+        font-weight: 400;
         line-height: rem(36);
       }
 
@@ -122,6 +122,7 @@
 .btn {
   &__services {
     @extend .btn__consult;
+    max-width: 300px;
 
     background: #fff;
     color: #00699e;

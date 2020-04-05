@@ -12,4 +12,3 @@ import './js/slider__form-steps-specialists'
 import './assets/scss/main.scss'
 
 // CSS (example)
-// import './assets/css/main.css'
