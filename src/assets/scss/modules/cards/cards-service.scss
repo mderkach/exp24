@@ -68,6 +68,10 @@
         margin-bottom: 10px;
         padding: 10px 15px;
         background-color: #f7f8fa;
+
+        &:hover {
+          text-decoration: none !important;
+        }
       }
 
       &-img {
@@ -95,7 +99,6 @@
           cursor: pointer;
         }
       }
-
     }
   }
 }

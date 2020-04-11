@@ -16,13 +16,18 @@
     background-color: #fff;
     border: 1px solid #e6e6e6;
     margin-bottom: 10px;
+    transition: all 0.7s ease-in-out;
+
+    &-collapse {
+      transition: all 0.3s ease;
+    }
 
     &.is-collapsed {
       background-color: #f9f9f9;
       border: 1px solid #f9f9f9;
 
       .faq__item-header-trigger {
-        color: #000;
+        color: #000 !important;
       }
 
       .faq__item-opener {
@@ -38,7 +43,9 @@
       }
 
       .faq__item-collapse {
-        display: none;
+        opacity: 0;
+        height: 0;
+        z-index: -1;
       }
     }
 
@@ -52,7 +59,7 @@
         display: block;
         width: 100%;
         padding: 25px;
-        color: #00699e;
+        color: #00699e !important;
         font-family: "ProximaTh";
         font-size: rem(18);
         font-weight: 600;

@@ -19,6 +19,10 @@
     }
   }
 
+  .news__another-card__header {
+    -webkit-text-stroke: 1px #fff;
+  }
+
   .list__header {
     &.--white {
       -webkit-text-stroke: 1px #fff;
@@ -69,11 +73,32 @@
     -webkit-text-stroke: 1px #20242e;
   }
 
-  .screen__mchs-get-card-descr {
+  .screen__mchs-get-card-descr,
+  .cards__spec-service--header {
     -webkit-text-stroke: 1px #00699e;
   }
 
   .card__mchs-need-descr {
     -webkit-text-stroke: 1px #000;
+  }
+
+  .news__card-header {
+    -webkit-text-stroke: 1px #000;
+  }
+
+  .article {
+    h1 {
+      -webkit-text-stroke: 1px #fff;
+    }
+  }
+
+  .faq__info-descr {
+    -webkit-text-stroke: 1px #4385f5;
+  }
+
+  .review__info {
+    h2 {
+      -webkit-text-stroke: 1px #000;
+    }
   }
 }
