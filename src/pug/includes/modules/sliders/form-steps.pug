@@ -6,7 +6,7 @@ form.form__steps.swiper-container(action="#")
   .form__steps-wrapper.swiper-wrapper
 
     fieldset.form__steps-step.swiper-slide
-      h2.header__h2 Этап 1: Тип СРО
+      h2.header__h2 Этап 1: Выберите тип СРО
       .form__steps-step__body
         each input in sro
           label.form__steps-label(for=input.id) #{input.label}
@@ -14,7 +14,7 @@ form.form__steps.swiper-container(action="#")
             img.form__steps-check(src="assets/img/svg/form-check.svg", alt="")
 
     fieldset.form__steps-step.swiper-slide(id="build-price")
-      h2.header__h2 Этап 2: jobs
+      h2.header__h2 Этап 2: Выберите сумму контракта
       .form__steps-step__body
         each input in builders
           label.form__steps-label(for=input.id) #{input.label}
@@ -22,7 +22,7 @@ form.form__steps.swiper-container(action="#")
             img.form__steps-check(src="assets/img/svg/form-check.svg", alt="")
 
     fieldset.form__steps-step.swiper-slide(id="project-price")
-      h2.header__h2 Этап 2: izisk
+      h2.header__h2 Этап 2: Выберите сумму контракта
       .form__steps-step__body
         each input in projects_izisk
           label.form__steps-label(for=input.id) #{input.label}
@@ -30,7 +30,7 @@ form.form__steps.swiper-container(action="#")
             img.form__steps-check(src="assets/img/svg/form-check.svg", alt="")
 
     fieldset.form__steps-step.swiper-slide(id="form-confirm")
-      h2.header__h2 Этап 3: Оставить заявку
+      h2.header__h2 Этап 3: Оставьте номер, мы свяжемся с вами!
       .form__steps-step__body
         input.form__steps-input-text(name="name", type="text", placeholder="Ваше имя")
         input.form__steps-input-text(name="phone", type="text", placeholder="Номер телефона +7")

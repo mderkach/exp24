@@ -28,8 +28,15 @@
 
     &-img {
       img {
-        width: 67px;
-        height: 76px;
+        width: 137px;
+        height: 154px;
+        margin-top: 55px;
+
+        @include media-breakpoint-down('md') {
+          width: 67px;
+          height: 76px;
+          margin-top: 20px;
+        }
       }
     }
 

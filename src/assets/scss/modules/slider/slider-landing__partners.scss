@@ -16,17 +16,17 @@
         }
       }
 
-      &--pagination {
-        @extend .slider-main__actions--pagination;
+      // &--pagination {
+      //   @extend .slider-main__actions--pagination;
 
-        &--bullet {
-          @extend .slider-main__actions--pagination--bullet;
+      //   &--bullet {
+      //     @extend .slider-main__actions--pagination--bullet;
 
-          &--active {
-            @extend .slider-main__actions--pagination--bullet--active;
-          }
-        }
-      }
+      //     &--active {
+      //       @extend .slider-main__actions--pagination--bullet--active;
+      //     }
+      //   }
+      // }
     }
   }
 }

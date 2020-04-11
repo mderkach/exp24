@@ -1,5 +1,4 @@
 .--is-safari {
-
   .bankguaranties-about__preheader {
     -webkit-text-stroke: 1px #2557b7;
   }
@@ -31,7 +30,7 @@
   }
 
   .screen__get-consult--preheading {
-    -webkit-text-stroke: 1px rgba($color: #fff, $alpha: .7);
+    -webkit-text-stroke: 1px rgba($color: #fff, $alpha: 0.7);
   }
 
   .screen__get-consult--heading {
@@ -48,5 +47,33 @@
 
   .servicepack__header {
     -webkit-text-stroke: 1px #0af;
+  }
+
+  .card__you-get-descr {
+    -webkit-text-stroke: 1px #0af;
+  }
+
+  .additional-order--header {
+    -webkit-text-stroke: 1px #000;
+  }
+
+  .additional-order--info__descr {
+    -webkit-text-stroke: 1px #0af;
+  }
+
+  .additional-order--info__descr-mini {
+    -webkit-text-stroke: 1px rgba(32, 36, 46, .3);
+  }
+
+  .screen__mchs-get--list-header {
+    -webkit-text-stroke: 1px #20242e;
+  }
+
+  .screen__mchs-get-card-descr {
+    -webkit-text-stroke: 1px #00699e;
+  }
+
+  .card__mchs-need-descr {
+    -webkit-text-stroke: 1px #000;
   }
 }
