@@ -5,7 +5,6 @@
 }
 
 .faq {
-
   &__wrapper {
     margin-top: 45px;
   }
@@ -38,11 +37,12 @@
         }
 
         &:before {
-          transform: rotate(90deg)
+          transform: rotate(90deg);
         }
       }
 
       .faq__item-collapse {
+        position: relative;
         opacity: 0;
         height: 0;
         z-index: -1;
@@ -93,15 +93,13 @@
       &:before,
       &:after {
         position: absolute;
-        content: ' ';
+        content: " ";
         height: 15px;
         width: 3px;
         background-color: #fff;
         transform: rotate(90deg);
-        transition: all .3s ease
+        transition: all 0.3s ease;
       }
-
-
     }
 
     &-body {
@@ -206,5 +204,4 @@
       }
     }
   }
-
 }
