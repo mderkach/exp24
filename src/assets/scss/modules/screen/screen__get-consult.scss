@@ -7,7 +7,7 @@
       &--preheading {
         color: rgba($color: #fff, $alpha: .7);
         font-size: rem(25);
-        font-weight: 700;
+        // font-weight: 700;
         line-height: rem(50);
         margin-bottom: rem(20);
 
@@ -33,6 +33,7 @@
 
       &--subheading {
         color: rgba($color: #fff, $alpha: .7);
+        font-family: 'ProximaRegular';
         font-size: rem(20);
         font-weight: 400;
         line-height: rem(50);

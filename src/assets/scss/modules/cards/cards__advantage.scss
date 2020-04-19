@@ -42,17 +42,17 @@
 
     &--img {
       display: block;
-      width: 75px;
-      height: 75px;
-      min-width: 75px;
-      min-height: 75px;
+      width: 10px;
+      height: 10px;
+      min-width: 50px;
+      min-height: 65px;
       margin: 0 auto;
     }
 
     &--header {
       margin-bottom: 15px;
       color: #00699e;
-      font-family: "ProximaRegular";
+      font-family: "ProximaLt";
       font-size: rem(30);
       font-weight: 700;
     }

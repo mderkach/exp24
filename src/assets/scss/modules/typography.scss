@@ -5,16 +5,16 @@ h4,
 h5,
 h6,
 p {
-  font-family: "ProximaRegular";
+  font-family: "ProximaLt";
   margin-bottom: 0;
 }
 
 .header {
   &__h1 {
     color: #20242e;
-    font-size: rem(60);
+    font-size: 3rem;
     font-weight: 700;
-    line-height: rem(60);
+    line-height: 3.2rem;
 
     @include media-breakpoint-down(lg) {
       font-size: rem(40);

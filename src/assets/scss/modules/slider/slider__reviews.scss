@@ -56,15 +56,15 @@
 
       &--author {
         color: #20242e;
-        font-family: "ProximaRegular";
+        font-family: "ProximaLt";
         font-size: rem(16);
         font-weight: 400;
 
         &-job {
           color: rgba($color: #20242e, $alpha: 0.5);
-          font-family: "ProximaLt";
-          font-size: rem(16);
-          font-weight: 600;
+          font-family: "ProximaRegular";
+          font-size: 0.8rem;
+          // font-weight: 600;
         }
 
         &-wrapper {
