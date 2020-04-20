@@ -49,6 +49,8 @@
         &__get {
           &-consult {
             @extend .btn__services;
+            width: 100%;
+            max-width: 350px;
 
             &-arrow {
               @extend .btn__services-arrow;

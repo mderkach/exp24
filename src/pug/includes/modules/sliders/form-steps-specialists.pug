@@ -6,7 +6,7 @@ form.form__steps-specialists.swiper-container(action="#")
   .form__steps-wrapper.swiper-wrapper
 
     fieldset.form__steps-step.swiper-slide
-      h2.header__h2 Этап 1: Выберете необходимый реестр
+      h2.header__h2 Выберете необходимый реестр
       .form__steps-step__body
         each input in registry
           label.form__steps-label(for=input.id) #{input.label}
@@ -14,7 +14,7 @@ form.form__steps-specialists.swiper-container(action="#")
             img.form__steps-check(src="assets/img/svg/form-check.svg", alt="")
 
     fieldset.form__steps-step.swiper-slide(id="how-quick")
-      h2.header__h2 Этап 2: Как срочно необходимо внести специалистов?
+      h2.header__h2 Как срочно необходимо внести специалистов?
       .form__steps-step__body
         each input in time
           label.form__steps-label(for=input.id) #{input.label}
@@ -22,7 +22,7 @@ form.form__steps-specialists.swiper-container(action="#")
             img.form__steps-check(src="assets/img/svg/form-check.svg", alt="")
 
     fieldset.form__steps-step.swiper-slide(id="docs")
-      h2.header__h2 Этап 3: Загрузите копии документов на проверку
+      h2.header__h2 Загрузите копии документов на проверку
       .form__steps-step__body
         label.form__steps-label(for='diplom') Загрузить копию диплома о высшем образовании
           input.form__steps-input-file(id='diplom', name="diplom", type="file", required)
@@ -32,7 +32,7 @@ form.form__steps-specialists.swiper-container(action="#")
 
 
     fieldset.form__steps-step.swiper-slide(id="end")
-      h2.header__h2 Этап 4: Оставьте номер, мы свяжемся с Вами и сообщим результат
+      h2.header__h2 Оставьте номер, мы свяжемся с Вами и сообщим результат
       .form__steps-step__body
         p Наши специалисты изучат документы и рассчитают стоимость! Оставьте номер, мы свяжемся с Вами и сообщим результат
         input.form__steps-input-text(name="phone", type="text", placeholder="Номер телефона +7", required)

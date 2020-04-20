@@ -103,3 +103,16 @@
     }
   }
 }
+
+
+.review {
+  &-page {
+    .cards {
+      height: 100%;
+
+      &__date {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
