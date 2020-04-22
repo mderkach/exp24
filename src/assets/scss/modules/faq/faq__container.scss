@@ -93,7 +93,7 @@
 			}
 
 			&--notify {
-				font-family: 'ProximaRegular';
+				font-family: "ProximaRegular";
 				color: #6d7783;
 				font-size: rem(14);
 				font-weight: 400;
@@ -127,7 +127,7 @@
 			background-color: #f3f5f9;
 			color: #00699e;
 			text-align: center;
-			font-family: 'ProximaTh';
+			font-family: "ProximaTh";
 			font-size: rem(16);
 			line-height: 1;
 			text-transform: uppercase;
@@ -143,5 +143,15 @@
 				display: none;
 			}
 		}
+	}
+}
+
+.screen__faq-page {
+	.faq__wrapper {
+		margin-top: 20px;
+	}
+
+	.faq__info-wrapper {
+		padding-top: 0;
 	}
 }
